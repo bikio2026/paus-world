@@ -1,4 +1,4 @@
-// Pau's World of Wonder — Service Worker v6 (no-cache)
+// Pau's World of Wonder — Service Worker v7 (no-cache, force refresh)
 // This SW only exists to support PWA install + takes no action on fetch.
 // All old caches are deleted on activate.
 

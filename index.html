@@ -2376,14 +2376,20 @@
   <script src="data.js"></script>
   <script src="app.js"></script>
   <script>
-    // Clean old caches + re-register service worker
+    // Aggressive cache clean + SW update (v7)
     if ('serviceWorker' in navigator) {
-      // Wipe all caches immediately
+      // Wipe all caches
       if ('caches' in window) {
         caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
       }
-      // Re-register (new SW v6 does no caching)
-      navigator.serviceWorker.register('./sw.js').catch(() => {});
+      // Unregister old SW, then re-register fresh
+      navigator.serviceWorker.getRegistrations().then(regs => {
+        regs.forEach(r => r.unregister());
+        // Small delay to ensure unregister completes
+        setTimeout(() => {
+          navigator.serviceWorker.register('./sw.js').catch(() => {});
+        }, 500);
+      });
     }
   </script>
 </body>
