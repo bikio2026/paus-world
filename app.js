@@ -1451,18 +1451,18 @@
   // BACKGROUND MUSIC — simple audio (trees quiz)
   // ========================================
   const BG_MUSIC_TRACKS = [
-    // HVOB — Spotify 30-sec previews
-    { url: 'https://p.scdn.co/mp3-preview/5a2c907287e13bb1ee838d1b58173bda6f804cb8', name: 'HVOB — 2nd World' },
-    { url: 'https://p.scdn.co/mp3-preview/616cecda20fb1d48d5dd2df28bb6a7e98a68d850', name: 'HVOB — Bloom' },
-    { url: 'https://p.scdn.co/mp3-preview/d26d747a7d9eee991274f18f67d8a4377cebc9b1', name: 'HVOB — Window' },
-    { url: 'https://p.scdn.co/mp3-preview/16ab0de3706be3b6a2475515e77df4115fc61988', name: 'HVOB — Alaska' },
-    { url: 'https://p.scdn.co/mp3-preview/c37cd53d562e4c12821547c346679196d04ddc50', name: 'HVOB — Tender Skin' },
-    // Free ambient tracks (Mixkit)
-    { url: 'https://assets.mixkit.co/music/127/127.mp3', name: 'Valley Sunset' },
+    // Mixkit — free ambient (no attribution needed)
     { url: 'https://assets.mixkit.co/music/139/139.mp3', name: 'Spirit in the Woods' },
     { url: 'https://assets.mixkit.co/music/138/138.mp3', name: 'Forest Treasure' },
+    { url: 'https://assets.mixkit.co/music/607/607.mp3', name: 'Forest Walk' },
+    { url: 'https://assets.mixkit.co/music/148/148.mp3', name: 'Forest Mist Whispers' },
     { url: 'https://assets.mixkit.co/music/184/184.mp3', name: 'Vastness' },
-    { url: 'https://assets.mixkit.co/music/607/607.mp3', name: 'Forest Walk' }
+    // Pixabay — free ambient (no attribution needed)
+    { url: 'https://cdn.pixabay.com/audio/2024/01/05/audio_df760de79f.mp3', name: 'Midnight Forest' },
+    { url: 'https://cdn.pixabay.com/audio/2022/05/05/audio_1395e7800f.mp3', name: 'Forest Lullaby' },
+    { url: 'https://cdn.pixabay.com/audio/2021/07/27/audio_202082aa0b.mp3', name: 'In the Forest' },
+    { url: 'https://cdn.pixabay.com/audio/2022/01/28/audio_8030063ec5.mp3', name: 'Ambient Spring Forest' },
+    { url: 'https://cdn.pixabay.com/audio/2025/03/13/audio_c778ba2c44.mp3', name: 'Documentary Nature' }
   ];
 
   let bgMusicMuted = false;
