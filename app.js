@@ -312,12 +312,11 @@
     showScreen('quiz');
     renderRound();
 
-    // Show Spotify player for trees (unless user closed it)
-    if (category === 'trees' && !spotifyState.closedByUser) {
-      shuffleSpotifyPlaylist();
-      showSpotifyPlayer();
+    // Start background music for trees quiz
+    if (category === 'trees') {
+      startBgMusic();
     } else {
-      hideSpotifyPlayer();
+      stopBgMusic();
     }
   }
 
@@ -507,7 +506,7 @@
   function showResults() {
     // Stop any remaining sounds
     stopBirdSound();
-    hideSpotifyPlayer();
+    stopBgMusic();
 
     showScreen('results');
 
@@ -1371,7 +1370,7 @@
     $('#btn-quit-confirm').addEventListener('click', () => {
       $('#quit-overlay').classList.remove('visible');
       stopBirdSound();
-      hideSpotifyPlayer();
+      stopBgMusic();
       $('#player-name').value = '';
       showScreen('welcome');
     });
@@ -1449,138 +1448,86 @@
   }
 
   // ========================================
-  // SPOTIFY MINI PLAYER — HVOB Live in London
+  // BACKGROUND MUSIC — simple audio (trees quiz)
   // ========================================
-  const HVOB_TRACKS = [
-    { id: '4Qwq0YDNIgh6BHz0WyPd4o', name: '2nd World' },
-    { id: '7gRcVeATZ40fZNvNCqnqlg', name: 'Jack' },
-    { id: '6jHYnm5d3XBo7PYoNYCDiL', name: 'Panama' },
-    { id: '4Mc1dgIuRhp4WwxKNs8zel', name: 'Cool Melt' },
-    { id: '0kB9iMIvWieO9y8fUKzLnn', name: 'Kante' },
-    { id: '0gU6omHESZKqA6yHVL3CGI', name: 'Tender Skin' },
-    { id: '2fPHV0Pa90AQmizoexxTRR', name: 'Dogs' },
-    { id: '0OSClKd2kzc0hMvnvJTssI', name: 'Sync' },
-    { id: '7jbImpXIhSbBHRTVmRt0l2', name: 'The Blame Game' },
-    { id: '0lS749qkjRWofWvqZkPjUR', name: 'Bloom' },
-    { id: '1rKb9LKE8zvqFt31jcDXL4', name: 'Alaska' },
-    { id: '7l25S0mMvxqchC5HNbqCfn', name: 'Eraser' },
-    { id: '5El211T02lZsF1Qm9R83xD', name: 'Azrael' },
-    { id: '6g65kolQxocUNH1t0WCEpW', name: 'Butter' },
-    { id: '2P0Li2XGQxz5JL0wLreTOc', name: 'Window' },
-    { id: '4aEF3ieD8mQ5Jc0TxeeN93', name: 'A List' }
+  const BG_MUSIC_TRACKS = [
+    // HVOB — Spotify 30-sec previews
+    { url: 'https://p.scdn.co/mp3-preview/5a2c907287e13bb1ee838d1b58173bda6f804cb8', name: 'HVOB — 2nd World' },
+    { url: 'https://p.scdn.co/mp3-preview/616cecda20fb1d48d5dd2df28bb6a7e98a68d850', name: 'HVOB — Bloom' },
+    { url: 'https://p.scdn.co/mp3-preview/d26d747a7d9eee991274f18f67d8a4377cebc9b1', name: 'HVOB — Window' },
+    { url: 'https://p.scdn.co/mp3-preview/16ab0de3706be3b6a2475515e77df4115fc61988', name: 'HVOB — Alaska' },
+    { url: 'https://p.scdn.co/mp3-preview/c37cd53d562e4c12821547c346679196d04ddc50', name: 'HVOB — Tender Skin' },
+    // Free ambient tracks (Mixkit)
+    { url: 'https://assets.mixkit.co/music/127/127.mp3', name: 'Valley Sunset' },
+    { url: 'https://assets.mixkit.co/music/139/139.mp3', name: 'Spirit in the Woods' },
+    { url: 'https://assets.mixkit.co/music/138/138.mp3', name: 'Forest Treasure' },
+    { url: 'https://assets.mixkit.co/music/184/184.mp3', name: 'Vastness' },
+    { url: 'https://assets.mixkit.co/music/607/607.mp3', name: 'Forest Walk' }
   ];
 
-  const spotifyState = {
-    shuffled: [],
-    currentIndex: 0,
-    playing: false,
-    visible: false,
-    closedByUser: false  // If user closed, don't auto-reopen
-  };
+  let bgMusicMuted = false;
 
-  function shuffleSpotifyPlaylist() {
-    spotifyState.shuffled = shuffle(HVOB_TRACKS);
-    spotifyState.currentIndex = 0;
-  }
+  function startBgMusic() {
+    const audio = $('#bg-music');
+    const muteBtn = $('#btn-music-mute');
+    if (!audio) return;
 
-  function getSpotifyEmbedUrl(trackId, autoplay) {
-    // Using compact theme, no cover art for cleaner embed
-    return `https://open.spotify.com/embed/track/${trackId}?utm_source=generator&theme=0${autoplay ? '' : ''}`;
-  }
+    // Pick a random track
+    const track = BG_MUSIC_TRACKS[Math.floor(Math.random() * BG_MUSIC_TRACKS.length)];
+    audio.src = track.url;
+    audio.volume = 0.3;
 
-  function showSpotifyPlayer() {
-    const player = $('#spotify-player');
-    const quiz = $('#screen-quiz');
-    if (!player) return;
-
-    spotifyState.visible = true;
-    spotifyState.closedByUser = false;
-    player.classList.remove('hidden');
-    quiz.classList.add('has-player');
-    loadSpotifyTrack(true);
-  }
-
-  function hideSpotifyPlayer() {
-    const player = $('#spotify-player');
-    const quiz = $('#screen-quiz');
-    const iframe = $('#sp-iframe');
-    if (!player) return;
-
-    spotifyState.visible = false;
-    spotifyState.playing = false;
-    player.classList.add('hidden');
-    quiz.classList.remove('has-player');
-
-    // Stop playback by clearing iframe
-    if (iframe) iframe.src = '';
-  }
-
-  function loadSpotifyTrack(autoplay) {
-    if (spotifyState.shuffled.length === 0) shuffleSpotifyPlaylist();
-
-    const track = spotifyState.shuffled[spotifyState.currentIndex];
-    const iframe = $('#sp-iframe');
-    const trackName = $('#sp-track-name');
-    const playBtn = $('#sp-play');
-
-    if (!iframe || !track) return;
-
-    trackName.textContent = track.name;
-    iframe.src = getSpotifyEmbedUrl(track.id, autoplay);
-    spotifyState.playing = autoplay;
-    playBtn.textContent = autoplay ? '⏸' : '▶';
-  }
-
-  function spotifyNext() {
-    spotifyState.currentIndex++;
-    if (spotifyState.currentIndex >= spotifyState.shuffled.length) {
-      shuffleSpotifyPlaylist();
+    // Show mute button
+    if (muteBtn) {
+      muteBtn.classList.remove('hidden');
+      muteBtn.textContent = bgMusicMuted ? '🔇' : '🔊';
     }
-    loadSpotifyTrack(true);
-  }
 
-  function spotifyPrev() {
-    spotifyState.currentIndex--;
-    if (spotifyState.currentIndex < 0) {
-      spotifyState.currentIndex = spotifyState.shuffled.length - 1;
-    }
-    loadSpotifyTrack(true);
-  }
+    // Respect previous mute preference
+    audio.muted = bgMusicMuted;
 
-  function spotifyTogglePlay() {
-    const iframe = $('#sp-iframe');
-    const playBtn = $('#sp-play');
-    const iframeWrap = $('#sp-iframe-wrap');
-
-    if (spotifyState.playing) {
-      // Pause: clear iframe src
-      iframe.src = '';
-      spotifyState.playing = false;
-      playBtn.textContent = '▶';
-    } else {
-      // Play: reload current track
-      const track = spotifyState.shuffled[spotifyState.currentIndex];
-      if (track) {
-        iframe.src = getSpotifyEmbedUrl(track.id, true);
-        spotifyState.playing = true;
-        playBtn.textContent = '⏸';
-      }
-    }
-  }
-
-  function initSpotifyPlayer() {
-    const prevBtn = $('#sp-prev');
-    const playBtn = $('#sp-play');
-    const nextBtn = $('#sp-next');
-    const closeBtn = $('#sp-close');
-
-    if (prevBtn) prevBtn.addEventListener('click', spotifyPrev);
-    if (playBtn) playBtn.addEventListener('click', spotifyTogglePlay);
-    if (nextBtn) nextBtn.addEventListener('click', spotifyNext);
-    if (closeBtn) closeBtn.addEventListener('click', () => {
-      spotifyState.closedByUser = true;
-      hideSpotifyPlayer();
+    // Play (needs user gesture on mobile — we're inside a click handler via startQuiz)
+    audio.play().catch(() => {
+      // Autoplay blocked — silently fail, user can tap mute btn to retry
     });
+  }
+
+  function stopBgMusic() {
+    const audio = $('#bg-music');
+    const muteBtn = $('#btn-music-mute');
+    if (!audio) return;
+
+    audio.pause();
+    audio.src = '';
+
+    // Hide mute button
+    if (muteBtn) muteBtn.classList.add('hidden');
+  }
+
+  function toggleBgMute() {
+    const audio = $('#bg-music');
+    const muteBtn = $('#btn-music-mute');
+    if (!audio) return;
+
+    bgMusicMuted = !bgMusicMuted;
+    audio.muted = bgMusicMuted;
+
+    if (muteBtn) {
+      muteBtn.textContent = bgMusicMuted ? '🔇' : '🔊';
+      muteBtn.classList.toggle('muted', bgMusicMuted);
+    }
+
+    // If unmuting and audio was blocked, try playing again
+    if (!bgMusicMuted && audio.paused && audio.src) {
+      audio.play().catch(() => {});
+    }
+  }
+
+  function initBgMusic() {
+    const muteBtn = $('#btn-music-mute');
+    if (muteBtn) {
+      muteBtn.addEventListener('click', toggleBgMute);
+    }
   }
 
   // ========================================
@@ -1589,7 +1536,7 @@
   function init() {
     initEventListeners();
     initReportTabs();
-    initSpotifyPlayer();
+    initBgMusic();
 
     // Secret admin access via URL hash: #admin
     if (location.hash === '#admin') {

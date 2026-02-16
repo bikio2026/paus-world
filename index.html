@@ -1904,135 +1904,34 @@
     }
 
     /* ========================================
-       SPOTIFY MINI PLAYER (trees quiz only)
+       BACKGROUND MUSIC — mute button (trees quiz)
        ======================================== */
-    .spotify-player {
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      max-width: 480px;
-      z-index: 8000;
-      background: linear-gradient(135deg, var(--green-deep), #0d2818);
-      border-top: 2px solid var(--gold);
-      padding: 0;
-      transition: transform 0.4s var(--transition-smooth), opacity 0.4s var(--transition-smooth);
-    }
-
-    .spotify-player.hidden {
-      transform: translateX(-50%) translateY(100%);
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .spotify-player-bar {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 0.75rem;
-    }
-
-    .sp-controls {
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-      flex-shrink: 0;
-    }
-
-    .sp-btn {
+    .music-mute-btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 34px;
-      height: 34px;
-      border: none;
+      width: 32px;
+      height: 32px;
+      border: 1.5px solid var(--cream-dark);
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      color: var(--cream);
+      background: white;
+      color: var(--green-mid);
       font-size: 1rem;
       cursor: pointer;
       transition: all 0.2s var(--transition-smooth);
       touch-action: manipulation;
       -webkit-tap-highlight-color: transparent;
+      margin-left: auto;
     }
 
-    .sp-btn:hover {
-      background: rgba(255, 255, 255, 0.2);
+    .music-mute-btn:hover {
+      border-color: var(--green-mid);
+      background: var(--green-pale);
     }
 
-    .sp-btn:active {
-      transform: scale(0.92);
-    }
-
-    .sp-btn.sp-play {
-      width: 38px;
-      height: 38px;
-      background: var(--gold);
-      color: var(--green-deep);
-      font-size: 1.1rem;
-    }
-
-    .sp-btn.sp-play:hover {
-      background: var(--gold-light);
-    }
-
-    .sp-info {
-      flex: 1;
-      min-width: 0;
-      padding: 0 0.25rem;
-    }
-
-    .sp-track-name {
-      font-family: var(--font-heading);
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--cream);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      line-height: 1.2;
-    }
-
-    .sp-track-artist {
-      font-family: var(--font-body);
-      font-size: 0.7rem;
-      color: var(--green-pale);
-      opacity: 0.8;
-    }
-
-    .sp-btn.sp-close {
-      width: 28px;
-      height: 28px;
-      font-size: 0.75rem;
-      opacity: 0.6;
-    }
-
-    .sp-btn.sp-close:hover {
-      opacity: 1;
-      background: rgba(192, 57, 43, 0.3);
-    }
-
-    /* Spotify iframe (hidden, plays audio) */
-    .spotify-iframe-wrap {
-      height: 0;
-      overflow: hidden;
-      transition: height 0.3s var(--transition-smooth);
-    }
-
-    .spotify-iframe-wrap.expanded {
-      height: 80px;
-    }
-
-    .spotify-iframe-wrap iframe {
-      width: 100%;
-      height: 80px;
-      border: none;
-    }
-
-    /* Give quiz screen extra bottom padding when player is visible */
-    #screen-quiz.has-player {
-      padding-bottom: 5rem;
+    .music-mute-btn.muted {
+      color: var(--text-light);
+      opacity: 0.5;
     }
 
     /* Music toggle hint on category card */
@@ -2121,6 +2020,7 @@
       <!-- Top bar: Back + Progress -->
       <div class="quiz-top-bar">
         <button class="quit-btn" id="btn-quit" title="Volver al inicio">✕</button>
+        <button class="music-mute-btn hidden" id="btn-music-mute" title="Silenciar/activar música">🔊</button>
       </div>
 
       <!-- Progress -->
@@ -2332,27 +2232,8 @@
       </div>
     </section>
 
-    <!-- ============ SPOTIFY MINI PLAYER (trees quiz) ============ -->
-    <div class="spotify-player hidden" id="spotify-player">
-      <div class="spotify-player-bar">
-        <div class="sp-controls">
-          <button class="sp-btn" id="sp-prev" title="Anterior">⏮</button>
-          <button class="sp-btn sp-play" id="sp-play" title="Play/Pausa">▶</button>
-          <button class="sp-btn" id="sp-next" title="Siguiente">⏭</button>
-        </div>
-        <div class="sp-info">
-          <div class="sp-track-name" id="sp-track-name">—</div>
-          <div class="sp-track-artist">HVOB — Live in London</div>
-        </div>
-        <button class="sp-btn sp-close" id="sp-close" title="Cerrar música">✕</button>
-      </div>
-      <div class="spotify-iframe-wrap" id="sp-iframe-wrap">
-        <iframe id="sp-iframe"
-          src=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
-      </div>
-    </div>
+    <!-- ============ BACKGROUND MUSIC (trees quiz) ============ -->
+    <audio id="bg-music" loop preload="none"></audio>
 
     <!-- ============ QUIT CONFIRMATION OVERLAY ============ -->
     <div class="quit-overlay" id="quit-overlay">
