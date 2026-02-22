@@ -15,10 +15,7 @@
     currentRound: 0,      // 0-9
     rounds: [],           // generated round data
     quizScore: 0,
-    quoteRatings: [],     // array of 1-5
-    quoteComments: [],    // array of strings
-    phase: 'answering',   // 'answering' | 'reveal' | 'quote-rating'
-    currentStarRating: 0,
+    phase: 'answering',   // 'answering' | 'reveal'
     helpUsed: false,      // once per game
     helpAvailable: true,
     reportBackTarget: 'welcome'  // where "back" goes from report
@@ -262,8 +259,7 @@
         quote: selectedQuotes[i],
         userAnswer: null,
         isCorrect: false,
-        rating: null,
-        comment: ''
+        rating: null
       };
     });
 
@@ -303,8 +299,6 @@
     state.category = category;
     state.currentRound = 0;
     state.quizScore = 0;
-    state.quoteRatings = [];
-    state.quoteComments = [];
     state.rounds = generateRounds(category);
     state.helpUsed = false;
     state.helpAvailable = true;
@@ -325,7 +319,6 @@
     const roundNum = state.currentRound + 1;
 
     state.phase = 'answering';
-    state.currentStarRating = 0;
 
     // Stop any previous bird sound
     stopBirdSound();
@@ -390,17 +383,6 @@
     $('#reveal-section').classList.remove('visible');
     $('#quote-section').classList.remove('visible');
 
-    // Reset stars
-    $$('#star-rating .star').forEach(s => s.classList.remove('active', 'pop'));
-
-    // Reset comment (if comment feature is active)
-    const commentContainer = $('#comment-container');
-    const commentToggle = $('#comment-toggle');
-    const commentInput = $('#comment-input');
-    if (commentContainer) commentContainer.classList.remove('visible');
-    if (commentToggle) commentToggle.classList.remove('open');
-    if (commentInput) commentInput.value = '';
-
     // Reset next button
     $('#btn-next').disabled = true;
     $('#btn-next').textContent = roundNum < 10 ? 'Siguiente ronda →' : 'Ver resultados ✨';
@@ -451,47 +433,22 @@
   }
 
   function showQuotePhase() {
-    state.phase = 'quote-rating';
+    state.phase = 'reveal';
     const round = state.rounds[state.currentRound];
 
     $('#quote-text').textContent = round.quote.text;
     $('#quote-author').textContent = `— ${round.quote.author}`;
     $('#quote-section').classList.add('visible');
 
+    // Enable next button immediately (no rating required)
+    $('#btn-next').disabled = false;
+
     setTimeout(() => {
       $('#quote-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 300);
   }
 
-  function handleStarRating(value) {
-    state.currentStarRating = value;
-    const stars = $$('#star-rating .star');
-    stars.forEach((star, i) => {
-      if (i < value) {
-        star.classList.add('active');
-        if (!star.classList.contains('pop')) {
-          star.classList.add('pop');
-          setTimeout(() => star.classList.remove('pop'), 300);
-        }
-      } else {
-        star.classList.remove('active');
-      }
-    });
-
-    $('#btn-next').disabled = false;
-  }
-
   function goNextRound() {
-    if (state.currentStarRating === 0) return;
-
-    const round = state.rounds[state.currentRound];
-    round.rating = state.currentStarRating;
-    const ci = $('#comment-input');
-    round.comment = ci ? ci.value.trim() : '';
-
-    state.quoteRatings.push(round.rating);
-    state.quoteComments.push(round.comment);
-
     if (state.currentRound < 9) {
       state.currentRound++;
       renderRound();
@@ -530,58 +487,6 @@
     else message = '¡La naturaleza te espera! 🌱';
     $('#results-message').textContent = message;
 
-    // Quote affinity
-    const avgRating = state.quoteRatings.length > 0
-      ? state.quoteRatings.reduce((a, b) => a + b, 0) / state.quoteRatings.length
-      : 0;
-
-    const avgRounded = Math.round(avgRating * 10) / 10;
-    $('#affinity-score').innerHTML = `${avgRounded.toFixed(1)} <span>/ 5</span>`;
-
-    const starsContainer = $('#affinity-stars');
-    let starsHtml = '';
-    for (let i = 1; i <= 5; i++) {
-      if (i <= Math.floor(avgRating)) {
-        starsHtml += '<span>★</span>';
-      } else if (i - 0.5 <= avgRating) {
-        starsHtml += '<span>★</span>';
-      } else {
-        starsHtml += '<span class="star-empty">★</span>';
-      }
-    }
-    starsContainer.innerHTML = starsHtml;
-
-    // Favorite quote (highest rated)
-    let favIndex = 0;
-    let maxRating = 0;
-    state.quoteRatings.forEach((r, i) => {
-      if (r > maxRating) {
-        maxRating = r;
-        favIndex = i;
-      }
-    });
-
-    const favQuote = state.rounds[favIndex].quote;
-    const favComment = state.quoteComments[favIndex];
-    const favSection = $('#fav-quote-section');
-    if (maxRating >= 3) {
-      favSection.style.display = 'block';
-      $('#fav-quote-text').textContent = `"${favQuote.text}"`;
-      $('#fav-quote-author').textContent = `— ${favQuote.author}`;
-      // Show comment if available
-      const commentEl = $('#fav-quote-comment');
-      if (commentEl) {
-        if (favComment) {
-          commentEl.textContent = `💬 "${favComment}"`;
-          commentEl.style.display = 'block';
-        } else {
-          commentEl.style.display = 'none';
-        }
-      }
-    } else {
-      favSection.style.display = 'none';
-    }
-
     // Log results
     logGameResults();
 
@@ -595,26 +500,19 @@
   // LOGGING SYSTEM
   // ========================================
   function logGameResults() {
-    const avgRating = state.quoteRatings.length > 0
-      ? state.quoteRatings.reduce((a, b) => a + b, 0) / state.quoteRatings.length
-      : 0;
-
     const entry = {
       timestamp: new Date().toISOString(),
       playerName: state.playerName || 'Anónimo',
       category: state.category,
       quizScore: state.quizScore,
-      avgQuoteRating: Math.round(avgRating * 10) / 10,
       helpUsed: state.helpUsed,
-      rounds: state.rounds.map((r, i) => ({
+      rounds: state.rounds.map((r) => ({
         species: r.correctSpecies.nameEs,
         speciesId: r.correctSpecies.id,
         correct: r.isCorrect,
         userAnswer: r.options[r.userAnswer]?.nameEs || '—',
         quoteText: r.quote.text,
-        quoteAuthor: r.quote.author,
-        quoteRating: state.quoteRatings[i] || 0,
-        comment: state.quoteComments[i] || ''
+        quoteAuthor: r.quote.author
       }))
     };
 
@@ -670,25 +568,6 @@
         });
         roundsDetail += '</div>';
 
-        // Quote ratings & comments
-        const roundsWithComments = entry.rounds.filter(r => r.comment);
-        const roundsWithRatings = entry.rounds.filter(r => r.quoteRating > 0);
-
-        if (roundsWithRatings.length > 0) {
-          roundsDetail += '<div class="report-detail-section"><span class="report-detail-title">Frases y Valoraciones</span>';
-          entry.rounds.forEach((r, ri) => {
-            if (r.quoteRating > 0) {
-              const stars = '★'.repeat(r.quoteRating) + '☆'.repeat(5 - r.quoteRating);
-              let commentHtml = '';
-              if (r.comment) {
-                commentHtml = `<div class="report-comment">"${r.comment}"</div>`;
-              }
-              roundsDetail += `<div class="report-round-item"><span class="report-quote-stars">${stars}</span> <span class="report-quote-author">${r.quoteAuthor}</span>${commentHtml}</div>`;
-            }
-          });
-          roundsDetail += '</div>';
-        }
-
         roundsDetail += '</div>';
       }
 
@@ -701,7 +580,6 @@
           <div class="report-card-stats">
             <span class="report-stat">${catIcon} <span class="report-stat-value">${catName}</span></span>
             <span class="report-stat">✓ <span class="report-stat-value">${entry.quizScore}/10</span></span>
-            <span class="report-stat">★ <span class="report-stat-value">${entry.avgQuoteRating.toFixed(1)}/5</span></span>
             ${entry.helpUsed ? '<span class="report-stat">💡</span>' : ''}
           </div>
           <button class="report-toggle-btn" onclick="this.nextElementSibling.classList.toggle('visible');this.textContent=this.nextElementSibling.classList.contains('visible')?'▲ Ocultar detalles':'▼ Ver detalles'">▼ Ver detalles</button>
@@ -750,7 +628,6 @@
         $(`#tab-${target}`).classList.add('active');
         // Render content on tab switch
         if (target === 'stats') renderStats();
-        if (target === 'guestbook') renderGuestbook();
       });
     });
   }
@@ -768,59 +645,6 @@
     }
 
     let html = '';
-
-    // ---- QUOTE RANKING (weighted by appearances) ----
-    const quoteMap = {}; // key: "text|||author" → { totalRating, count, text, author }
-    history.forEach(game => {
-      if (!game.rounds) return;
-      game.rounds.forEach(r => {
-        if (!r.quoteAuthor || !r.quoteRating) return;
-        // Use logged quoteText if available (new logs), else find from QUOTES data
-        let quoteText = r.quoteText;
-        if (!quoteText) {
-          const quoteObj = QUOTES.find(q => q.author === r.quoteAuthor);
-          quoteText = quoteObj ? quoteObj.text : r.quoteAuthor;
-        }
-        const key = `${quoteText}|||${r.quoteAuthor}`;
-        if (!quoteMap[key]) {
-          quoteMap[key] = { totalRating: 0, count: 0, text: quoteText, author: r.quoteAuthor };
-        }
-        quoteMap[key].totalRating += r.quoteRating;
-        quoteMap[key].count++;
-      });
-    });
-
-    const quoteRanking = Object.values(quoteMap)
-      .map(q => ({
-        ...q,
-        avgRating: q.totalRating / q.count,
-        // Wilson score for weighted ranking (lower bound of confidence interval)
-        // This prevents quotes that appeared once with 5 stars from dominating
-        wilsonScore: wilsonLowerBound(q.totalRating, q.count, 5)
-      }))
-      .sort((a, b) => b.wilsonScore - a.wilsonScore);
-
-    if (quoteRanking.length > 0) {
-      html += '<div class="stats-section">';
-      html += '<div class="stats-section-title">✨ Ranking de Frases</div>';
-      const topQuotes = quoteRanking.slice(0, 15);
-      topQuotes.forEach((q, i) => {
-        const rankClass = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
-        const stars = '★'.repeat(Math.round(q.avgRating)) + '☆'.repeat(5 - Math.round(q.avgRating));
-        const truncText = q.text.length > 60 ? q.text.slice(0, 57) + '...' : q.text;
-        html += `
-          <div class="stats-item">
-            <span class="stats-rank ${rankClass}">${i + 1}</span>
-            <div class="stats-info">
-              <div class="stats-name" title="${escapeHtml(q.text)}">"${escapeHtml(truncText)}"</div>
-              <div class="stats-detail">${q.author} · ${q.count} aparición${q.count !== 1 ? 'es' : ''}</div>
-            </div>
-            <span class="stats-badge neutral">${stars} ${q.avgRating.toFixed(1)}</span>
-          </div>
-        `;
-      });
-      html += '</div>';
-    }
 
     // ---- SPECIES RANKING (by correct/incorrect answers) ----
     const speciesMap = {}; // key: species name → { correct, incorrect, total, name }
@@ -925,8 +749,6 @@
     const totalQuestions = totalGames * 10;
     const avgScore = (totalCorrect / totalGames).toFixed(1);
     const uniquePlayers = new Set(history.map(g => g.playerName)).size;
-    const avgQuoteRating = history.reduce((sum, g) => sum + (g.avgQuoteRating || 0), 0) / totalGames;
-
     html += '<div class="stats-section">';
     html += '<div class="stats-section-title">📊 Resumen general</div>';
     html += `
@@ -950,28 +772,10 @@
         <div class="stats-info"><div class="stats-name">Total aciertos</div></div>
         <span class="stats-badge positive">${totalCorrect}/${totalQuestions}</span>
       </div>
-      <div class="stats-item">
-        <span class="stats-rank">★</span>
-        <div class="stats-info"><div class="stats-name">Afinidad promedio con frases</div></div>
-        <span class="stats-badge neutral">${avgQuoteRating.toFixed(1)}/5</span>
-      </div>
     `;
     html += '</div>';
 
     container.innerHTML = html;
-  }
-
-  // Wilson score lower bound — gives a confidence-weighted ranking
-  // Adapted for ratings (not binary) by normalizing to 0-1 range
-  function wilsonLowerBound(totalRating, count, maxRating) {
-    if (count === 0) return 0;
-    const phat = (totalRating / count) / maxRating; // normalize to 0-1
-    const z = 1.96; // 95% confidence
-    const n = count;
-    const denominator = 1 + z * z / n;
-    const center = phat + z * z / (2 * n);
-    const spread = z * Math.sqrt((phat * (1 - phat) + z * z / (4 * n)) / n);
-    return (center - spread) / denominator;
   }
 
   function escapeHtml(str) {
@@ -980,102 +784,7 @@
     return div.innerHTML;
   }
 
-  // ========================================
-  // GUESTBOOK — Libro de Frases (literary guestbook)
-  // ========================================
-  function renderGuestbook() {
-    const history = getGameHistory();
-    const container = $('#guestbook-content');
-
-    // Collect all quote ratings >= 4 stars WITH comments (or 5 stars even without comments)
-    const entries = [];
-    history.forEach(game => {
-      if (!game.rounds) return;
-      game.rounds.forEach(r => {
-        if (r.quoteRating >= 4) {
-          entries.push({
-            quoteText: r.quoteText || '',
-            quoteAuthor: r.quoteAuthor,
-            quoteRating: r.quoteRating,
-            comment: r.comment || '',
-            playerName: game.playerName,
-            timestamp: game.timestamp
-          });
-        }
-      });
-    });
-
-    if (entries.length === 0) {
-      container.innerHTML = '<p class="stats-empty">Todavía no hay frases destacadas.<br>Las frases con 4 o 5 estrellas aparecerán acá.</p>';
-      return;
-    }
-
-    // Group by quote (use text+author as key)
-    const grouped = {};
-    entries.forEach(e => {
-      let quoteText = e.quoteText;
-      if (!quoteText) {
-        const quoteObj = QUOTES.find(q => q.author === e.quoteAuthor);
-        quoteText = quoteObj ? quoteObj.text : '';
-      }
-      const key = `${e.quoteAuthor}|||${quoteText}`;
-      if (!grouped[key]) {
-        grouped[key] = { text: quoteText, author: e.quoteAuthor, comments: [], maxRating: 0 };
-      }
-      if (e.quoteRating > grouped[key].maxRating) grouped[key].maxRating = e.quoteRating;
-      if (e.comment) {
-        grouped[key].comments.push({
-          text: e.comment,
-          player: e.playerName,
-          rating: e.quoteRating,
-          date: e.timestamp
-        });
-      }
-    });
-
-    // Sort: 5-star quotes first, then by number of comments
-    const sortedQuotes = Object.values(grouped)
-      .sort((a, b) => {
-        if (b.maxRating !== a.maxRating) return b.maxRating - a.maxRating;
-        return b.comments.length - a.comments.length;
-      });
-
-    let html = `<div style="text-align:center;margin-bottom:1rem;font-size:0.85rem;color:var(--text-light);">
-      ${entries.length} momento${entries.length !== 1 ? 's' : ''} destacado${entries.length !== 1 ? 's' : ''} en ${sortedQuotes.length} frase${sortedQuotes.length !== 1 ? 's' : ''}
-    </div>`;
-
-    sortedQuotes.forEach(q => {
-      const stars = '★'.repeat(q.maxRating) + '☆'.repeat(5 - q.maxRating);
-
-      html += `<div class="guestbook-entry">`;
-      html += `<div class="guestbook-stars">${stars}</div>`;
-      if (q.text) {
-        html += `<div class="guestbook-quote">"${escapeHtml(q.text)}"</div>`;
-      }
-      html += `<div class="guestbook-author">— ${escapeHtml(q.author)}</div>`;
-
-      // Show comments
-      if (q.comments.length > 0) {
-        q.comments.forEach(c => {
-          const date = new Date(c.date);
-          const dateStr = date.toLocaleDateString('es-AR', { day: 'numeric', month: 'short' });
-          html += `
-            <div class="guestbook-comment-box">
-              <div class="guestbook-comment-text">"${escapeHtml(c.text)}"</div>
-              <div class="guestbook-comment-meta">
-                <span>${escapeHtml(c.player)}</span>
-                <span>${'★'.repeat(c.rating)} · ${dateStr}</span>
-              </div>
-            </div>
-          `;
-        });
-      }
-
-      html += `</div>`;
-    });
-
-    container.innerHTML = html;
-  }
+  // Guestbook removed — quote ratings no longer collected
 
   // ========================================
   // CONFETTI
@@ -1169,90 +878,22 @@
     ctx.font = 'italic 40px serif';
     ctx.fillText(message, w / 2, 590);
 
-    // Divider
-    ctx.strokeStyle = 'rgba(245, 240, 232, 0.15)';
+    // Decorative ornament
+    ctx.strokeStyle = 'rgba(201, 162, 39, 0.4)';
     ctx.lineWidth = 1;
     ctx.beginPath();
-    ctx.moveTo(w / 2 - 120, 640);
-    ctx.lineTo(w / 2 + 120, 640);
+    ctx.moveTo(w / 2 - 80, 640);
+    ctx.lineTo(w / 2 + 80, 640);
     ctx.stroke();
 
-    // Quote affinity
-    ctx.fillStyle = 'rgba(183, 228, 199, 0.7)';
-    ctx.font = '28px serif';
-    ctx.fillText('Afinidad con las citas', w / 2, 700);
+    ctx.fillStyle = '#c9a227';
+    ctx.font = '20px serif';
+    ctx.fillText('🌿', w / 2, 670);
 
-    const avgRating = state.quoteRatings.length > 0
-      ? state.quoteRatings.reduce((a, b) => a + b, 0) / state.quoteRatings.length
-      : 0;
-    const avgRoundedStr = (Math.round(avgRating * 10) / 10).toFixed(1);
-
-    const starY = 750;
-    const starSize = 40;
-    const startX = w / 2 - (5 * starSize) / 2;
-    for (let i = 0; i < 5; i++) {
-      ctx.font = `${starSize}px serif`;
-      ctx.fillStyle = i < Math.round(avgRating) ? '#c9a227' : 'rgba(245, 240, 232, 0.2)';
-      ctx.fillText('★', startX + i * starSize + starSize / 2, starY);
-    }
-
-    ctx.fillStyle = '#f5f0e8';
-    ctx.font = '700 64px serif';
-    ctx.fillText(`${avgRoundedStr}`, w / 2, 840);
-    ctx.fillStyle = 'rgba(245, 240, 232, 0.5)';
-    ctx.font = '400 36px serif';
-    ctx.fillText('/ 5', w / 2 + 70, 840);
-
-    // Favorite quote
-    let favIndex = 0;
-    let maxRating = 0;
-    state.quoteRatings.forEach((r, i) => {
-      if (r > maxRating) {
-        maxRating = r;
-        favIndex = i;
-      }
-    });
-
-    if (maxRating >= 3) {
-      const favQuote = state.rounds[favIndex].quote;
-
-      ctx.strokeStyle = 'rgba(201, 162, 39, 0.3)';
-      ctx.beginPath();
-      ctx.moveTo(w / 2 - 100, 890);
-      ctx.lineTo(w / 2 + 100, 890);
-      ctx.stroke();
-
-      ctx.fillStyle = 'rgba(183, 228, 199, 0.5)';
-      ctx.font = '22px serif';
-      ctx.fillText('Tu cita favorita', w / 2, 930);
-
-      ctx.fillStyle = 'rgba(245, 240, 232, 0.9)';
-      ctx.font = 'italic 30px serif';
-      const maxLineWidth = w - 160;
-      const lines = wrapText(ctx, `"${favQuote.text}"`, maxLineWidth);
-      const lineHeight = 40;
-      const quoteStartY = 980;
-      lines.forEach((line, idx) => {
-        ctx.fillText(line, w / 2, quoteStartY + idx * lineHeight);
-      });
-
-      const authorY = quoteStartY + lines.length * lineHeight + 20;
-      ctx.fillStyle = '#c9a227';
-      ctx.font = '600 26px serif';
-      ctx.fillText(`— ${favQuote.author}`, w / 2, authorY);
-
-      // Include user's comment if available
-      const favComment = state.quoteComments[favIndex];
-      if (favComment) {
-        const commentY = authorY + 45;
-        ctx.fillStyle = 'rgba(183, 228, 199, 0.6)';
-        ctx.font = 'italic 22px serif';
-        const commentLines = wrapText(ctx, `💬 "${favComment}"`, maxLineWidth - 40);
-        commentLines.forEach((line, idx) => {
-          ctx.fillText(line, w / 2, commentY + idx * 30);
-        });
-      }
-    }
+    // App tagline
+    ctx.fillStyle = 'rgba(183, 228, 199, 0.6)';
+    ctx.font = 'italic 28px serif';
+    ctx.fillText('Descubriendo la naturaleza juntos', w / 2, 720);
 
     // Bottom gold line
     ctx.fillStyle = '#c9a227';
@@ -1394,28 +1035,6 @@
       $('#sound-icon').textContent = '🔊';
       $('#sound-label').textContent = 'Tocá para escuchar 🎵';
     });
-
-    // Star rating
-    $$('#star-rating .star').forEach(star => {
-      star.addEventListener('click', () => {
-        const value = parseInt(star.dataset.value);
-        handleStarRating(value);
-      });
-    });
-
-    // Comment toggle (if comment feature is active)
-    const commentToggleEl = $('#comment-toggle');
-    if (commentToggleEl) {
-      commentToggleEl.addEventListener('click', () => {
-        const container = $('#comment-container');
-        const toggle = $('#comment-toggle');
-        container.classList.toggle('visible');
-        toggle.classList.toggle('open');
-        if (container.classList.contains('visible')) {
-          setTimeout(() => $('#comment-input').focus(), 300);
-        }
-      });
-    }
 
     // Next round
     $('#btn-next').addEventListener('click', goNextRound);

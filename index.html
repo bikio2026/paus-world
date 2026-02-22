@@ -815,122 +815,6 @@
       letter-spacing: 0.03em;
     }
 
-    .quote-prompt {
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      color: var(--text-mid);
-      text-align: center;
-      margin-bottom: 0.75rem;
-      font-style: italic;
-    }
-
-    /* Star rating */
-    .star-rating {
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .star-rating .star {
-      font-size: 2rem;
-      cursor: pointer;
-      color: var(--cream-dark);
-      transition: all 0.2s var(--transition-smooth);
-      touch-action: manipulation;
-      -webkit-tap-highlight-color: transparent;
-      user-select: none;
-      padding: 4px;
-      line-height: 1;
-    }
-
-    .star-rating .star:hover {
-      transform: scale(1.2);
-    }
-
-    .star-rating .star.active {
-      color: var(--gold);
-      text-shadow: 0 0 8px rgba(201, 162, 39, 0.3);
-    }
-
-    .star-rating .star.active:hover {
-      color: var(--gold-light);
-    }
-
-    @keyframes starPop {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.35); }
-      100% { transform: scale(1); }
-    }
-
-    .star-rating .star.pop {
-      animation: starPop 0.3s var(--transition-smooth);
-    }
-
-    /* Comment input */
-    .comment-toggle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
-      background: none;
-      border: none;
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      color: var(--text-light);
-      cursor: pointer;
-      padding: 0.5rem;
-      margin: 0 auto 0.75rem;
-      transition: color 0.2s;
-    }
-
-    .comment-toggle:hover {
-      color: var(--text-mid);
-    }
-
-    .comment-toggle-icon {
-      transition: transform 0.3s var(--transition-smooth);
-      display: inline-block;
-    }
-
-    .comment-toggle.open .comment-toggle-icon {
-      transform: rotate(180deg);
-    }
-
-    .comment-container {
-      display: none;
-      margin-bottom: 1rem;
-    }
-
-    .comment-container.visible {
-      display: block;
-      animation: slideUp 0.3s var(--transition-smooth) forwards;
-    }
-
-    .comment-input {
-      width: 100%;
-      min-height: 60px;
-      padding: 0.75rem 1rem;
-      border: 1.5px solid var(--cream-dark);
-      border-radius: var(--radius-sm);
-      font-family: var(--font-body);
-      font-size: 1rem;
-      color: var(--text-dark);
-      background: white;
-      resize: vertical;
-      transition: border-color 0.2s;
-    }
-
-    .comment-input:focus {
-      outline: none;
-      border-color: var(--green-light);
-    }
-
-    .comment-input::placeholder {
-      color: var(--text-light);
-      font-style: italic;
-    }
-
     /* Next round button */
     .next-section {
       margin-top: 0.5rem;
@@ -1029,89 +913,6 @@
       height: 1px;
       background: var(--cream-dark);
       margin: 0 auto 1.25rem;
-    }
-
-    .affinity-section {
-      margin-bottom: 1rem;
-    }
-
-    .affinity-label {
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      color: var(--text-mid);
-      margin-bottom: 0.4rem;
-    }
-
-    .affinity-stars {
-      display: flex;
-      justify-content: center;
-      gap: 0.3rem;
-      font-size: 1.5rem;
-      color: var(--gold);
-      margin-bottom: 0.3rem;
-    }
-
-    .affinity-stars .star-empty {
-      color: var(--cream-dark);
-    }
-
-    .affinity-score {
-      font-family: var(--font-display);
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--green-deep);
-    }
-
-    .affinity-score span {
-      font-size: 1rem;
-      color: var(--text-light);
-      font-weight: 400;
-    }
-
-    /* Favorite quote display */
-    .fav-quote-section {
-      margin-top: 1.25rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--cream-dark);
-    }
-
-    .fav-quote-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text-light);
-      margin-bottom: 0.5rem;
-    }
-
-    .fav-quote-text {
-      font-family: var(--font-heading);
-      font-style: italic;
-      font-size: 0.95rem;
-      color: var(--green-deep);
-      line-height: 1.5;
-      max-width: 280px;
-      margin: 0 auto;
-    }
-
-    .fav-quote-author {
-      font-size: 0.8rem;
-      color: var(--gold);
-      margin-top: 0.35rem;
-      font-weight: 600;
-    }
-
-    .fav-quote-comment {
-      font-size: 0.82rem;
-      color: var(--green-mid);
-      font-style: italic;
-      margin-top: 0.5rem;
-      padding: 0.4rem 0.6rem;
-      background: var(--cream);
-      border-radius: var(--radius-sm);
-      border-left: 2px solid var(--gold);
-      max-width: 280px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     /* Result buttons */
@@ -1531,29 +1332,6 @@
       border-bottom: none;
     }
 
-    .report-quote-stars {
-      color: var(--gold);
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-    }
-
-    .report-quote-author {
-      font-style: italic;
-      color: var(--text-mid);
-    }
-
-    .report-comment {
-      margin-top: 0.15rem;
-      margin-left: 1rem;
-      font-style: italic;
-      color: var(--green-mid);
-      font-size: 0.8rem;
-      background: var(--cream);
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      border-left: 2px solid var(--gold);
-    }
-
     /* ========================================
        REPORT TABS
        ======================================== */
@@ -1735,66 +1513,6 @@
       padding: 1.5rem;
       color: var(--text-light);
       font-style: italic;
-    }
-
-    /* ========================================
-       GUESTBOOK (Libro de Frases)
-       ======================================== */
-    .guestbook-entry {
-      background: white;
-      border-radius: var(--radius-md);
-      padding: 1.25rem;
-      margin-bottom: 0.75rem;
-      box-shadow: var(--shadow-sm);
-      border-left: 3px solid var(--gold);
-      position: relative;
-    }
-
-    .guestbook-quote {
-      font-family: var(--font-heading);
-      font-style: italic;
-      font-size: 1rem;
-      color: var(--green-deep);
-      line-height: 1.5;
-      margin-bottom: 0.4rem;
-    }
-
-    .guestbook-author {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--gold);
-      margin-bottom: 0.6rem;
-    }
-
-    .guestbook-comment-box {
-      background: var(--cream);
-      border-radius: var(--radius-sm);
-      padding: 0.6rem 0.8rem;
-      border-left: 2px solid var(--green-light);
-      margin-bottom: 0.3rem;
-    }
-
-    .guestbook-comment-text {
-      font-size: 0.9rem;
-      color: var(--text-dark);
-      line-height: 1.4;
-    }
-
-    .guestbook-comment-meta {
-      font-size: 0.72rem;
-      color: var(--text-light);
-      margin-top: 0.25rem;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .guestbook-stars {
-      color: var(--gold);
-      font-size: 0.9rem;
-      letter-spacing: 1px;
-      position: absolute;
-      top: 0.75rem;
-      right: 0.75rem;
     }
 
     /* ========================================
@@ -2114,30 +1832,8 @@
           <p class="quote-author" id="quote-author">— Autor</p>
         </div>
 
-        <p class="quote-prompt">¿Qué te pareció esta frase?</p>
-
-        <div class="star-rating" id="star-rating">
-          <span class="star" data-value="1">★</span>
-          <span class="star" data-value="2">★</span>
-          <span class="star" data-value="3">★</span>
-          <span class="star" data-value="4">★</span>
-          <span class="star" data-value="5">★</span>
-        </div>
-
-        <!-- Comment feature (disabled for now)
-        <button class="comment-toggle" id="comment-toggle">
-          <span class="comment-toggle-icon">▾</span> Agregar comentario
-        </button>
-
-        <div class="comment-container" id="comment-container">
-          <textarea class="comment-input" id="comment-input"
-                    placeholder="Escribí lo que se te ocurra..."
-                    maxlength="200" rows="2"></textarea>
-        </div>
-        -->
-
         <div class="next-section">
-          <button class="btn btn-gold btn-block" id="btn-next" disabled>
+          <button class="btn btn-gold btn-block" id="btn-next">
             Siguiente ronda →
           </button>
         </div>
@@ -2160,21 +1856,6 @@
         <div class="score-message" id="results-message">¡Excelente!</div>
 
         <div class="results-divider"></div>
-
-        <div class="affinity-section">
-          <div class="affinity-label">Tu afinidad con las citas</div>
-          <div class="affinity-stars" id="affinity-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span class="star-empty">★</span>
-          </div>
-          <div class="affinity-score" id="affinity-score">4.2 <span>/ 5</span></div>
-        </div>
-
-        <div class="fav-quote-section" id="fav-quote-section">
-          <div class="fav-quote-label">Tu cita favorita</div>
-          <p class="fav-quote-text" id="fav-quote-text">"Cita favorita aquí"</p>
-          <p class="fav-quote-author" id="fav-quote-author">— Autor</p>
-          <p class="fav-quote-comment" id="fav-quote-comment" style="display:none;"></p>
-        </div>
       </div>
 
       <!-- Action buttons -->
@@ -2202,7 +1883,6 @@
       <div class="report-tabs" id="report-tabs">
         <button class="report-tab active" data-tab="history">📋 Historial</button>
         <button class="report-tab" data-tab="stats">📈 Estadísticas</button>
-        <button class="report-tab" data-tab="guestbook">📖 Libro de Frases</button>
       </div>
 
       <!-- Tab: History -->
@@ -2215,11 +1895,6 @@
       <!-- Tab: Statistics -->
       <div id="tab-stats" class="report-tab-content">
         <div id="stats-content" class="report-content"></div>
-      </div>
-
-      <!-- Tab: Guestbook (Libro de Frases) -->
-      <div id="tab-guestbook" class="report-tab-content">
-        <div id="guestbook-content" class="report-content"></div>
       </div>
 
       <div class="results-actions mt-2">
