@@ -590,11 +590,346 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     xcId: 381844
+  },
+
+  // --- AVES ARGENTINAS / RIOPLATENSES ---
+  // === FÁCILES (difficulty 1) ===
+  {
+    id: "b051",
+    nameEs: "Hornero",
+    nameEn: "Rufous Hornero",
+    scientific: "Furnarius rufus",
+    photoUrl: "Rufous hornero (Furnarius rufus) at nest Colonia.jpg",
+    funFact: "Es el ave nacional de Argentina. Construye su nido de barro en forma de horno, que puede pesar hasta 5 kg.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 1009595
+  },
+  {
+    id: "b052",
+    nameEs: "Calandria Grande",
+    nameEn: "Chalk-browed Mockingbird",
+    scientific: "Mimus saturninus",
+    photoUrl: "Chalk-browed Mockingbird (Mimus saturninus), Pantanal, Brazil.jpg",
+    funFact: "Es una de las mejores cantoras de Argentina. Puede imitar el canto de más de 20 especies diferentes.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 1080160
+  },
+  {
+    id: "b053",
+    nameEs: "Benteveo",
+    nameEn: "Great Kiskadee",
+    scientific: "Pitangus sulphuratus",
+    photoUrl: "Great kiskadee (70240).jpg",
+    funFact: "Su nombre viene de su canto: '¡bien-te-veo!'. Es omnívoro y hasta puede pescar pequeños peces lanzándose al agua.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 1080134
+  },
+  {
+    id: "b054",
+    nameEs: "Cardenal",
+    nameEn: "Red-crested Cardinal",
+    scientific: "Paroaria coronata",
+    photoUrl: "Red-crested cardinal (Paroaria coronata) Costanera Sur.jpg",
+    funFact: "Su copete rojo brillante lo hace inconfundible. Es tan popular que fue introducido en Hawái donde se estableció exitosamente.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 552906
+  },
+  {
+    id: "b055",
+    nameEs: "Garza Blanca",
+    nameEn: "Great Egret",
+    scientific: "Ardea alba",
+    photoUrl: "Ardea alba4.jpg",
+    funFact: "Sus plumas nupciales casi la llevaron a la extinción: en el siglo XIX se usaban para decorar sombreros de moda.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 1073122
+  },
+  {
+    id: "b056",
+    nameEs: "Chimango",
+    nameEn: "Chimango Caracara",
+    scientific: "Milvago chimango",
+    photoUrl: "Chimango caracara (Daptrius chimango temucoensis) female Puerto Varas.jpg",
+    funFact: "Es el rapaz más común de la pampa. Se adaptó perfectamente a las ciudades y se lo ve en plazas, rutas y basurales.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 33369
+  },
+  {
+    id: "b057",
+    nameEs: "Carancho",
+    nameEn: "Southern Crested Caracara",
+    scientific: "Caracara plancus",
+    photoUrl: "Southern crested caracara (Caracara plancus) head adult.JPG",
+    funFact: "Más carroñero que cazador, camina por el suelo buscando alimento. En el campo se lo ve seguir al arado para atrapar lombrices.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 1050467
+  },
+  {
+    id: "b058",
+    nameEs: "Cóndor Andino",
+    nameEn: "Andean Condor",
+    scientific: "Vultur gryphus",
+    photoUrl: "Vultur gryphus head (Linnaeus, 1758).jpg",
+    funFact: "Con 3,3 metros de envergadura, es una de las aves voladoras más grandes del mundo. Aparece en el escudo nacional argentino.",
+    difficulty: 1,
+    region: "southern-cone",
+    xcId: 1008961
+  },
+  {
+    id: "b059",
+    nameEs: "Chingolo",
+    nameEn: "Rufous-collared Sparrow",
+    scientific: "Zonotrichia capensis",
+    photoUrl: "Rufous-collared sparrow (Zonotrichia capensis costaricensis) 2.jpg",
+    funFact: "Es probablemente el ave más común de Argentina. Su canto matutino es la banda sonora de cualquier jardín del país.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 33355
+  },
+  {
+    id: "b060",
+    nameEs: "Zorzal Colorado",
+    nameEn: "Rufous-bellied Thrush",
+    scientific: "Turdus rufiventris",
+    photoUrl: "Rufous-bellied thrush (Turdus rufiventris).JPG",
+    funFact: "Carlos Gardel era apodado 'El Zorzal Criollo' por su hermoso canto. Es de las primeras aves en cantar al amanecer.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 1080158
+  },
+  {
+    id: "b061",
+    nameEs: "Cotorra Argentina",
+    nameEn: "Monk Parakeet",
+    scientific: "Myiopsitta monachus",
+    photoUrl: "Monk parakeets (Myiopsitta monachus monachus) flock in flight Colonia.jpg",
+    funFact: "Es la única cotorra que construye nidos comunales enormes de ramas. Se expandió por el mundo como especie invasora.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 1072635
+  },
+  {
+    id: "b062",
+    nameEs: "Tero",
+    nameEn: "Southern Lapwing",
+    scientific: "Vanellus chilensis",
+    photoUrl: "Southern lapwing (Vanellus chilensis cayennensis).jpg",
+    funFact: "Famoso por su grito de alarma que delata a cualquier intruso. Los gauchos decían que 'el tero avisa lejos del nido' para despistar.",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 1078062
+  },
+  {
+    id: "b063",
+    nameEs: "Ñandú",
+    nameEn: "Greater Rhea",
+    scientific: "Rhea americana",
+    photoUrl: "Greater rhea (Rhea americana).JPG",
+    funFact: "Es el ave más grande de América. El macho es quien incuba los huevos y cría a los pichones, ¡un padre dedicado!",
+    difficulty: 1,
+    region: "south-america",
+    xcId: 1016004
+  },
+  // === MEDIANAS (difficulty 2) ===
+  {
+    id: "b064",
+    nameEs: "Biguá",
+    nameEn: "Neotropic Cormorant",
+    scientific: "Nannopterum brasilianum",
+    photoUrl: "Phalacrocorax brasilianus (Costa Rica).jpg",
+    funFact: "Bucea para pescar y luego se posa con las alas abiertas al sol porque sus plumas no son impermeables.",
+    difficulty: 2,
+    region: "south-america",
+    xcId: 492257
+  },
+  {
+    id: "b065",
+    nameEs: "Espátula Rosada",
+    nameEn: "Roseate Spoonbill",
+    scientific: "Platalea ajaja",
+    photoUrl: "Roseate spoonbills at Smith Oaks Sanctuary, High Island, mating.jpg",
+    funFact: "Su pico en forma de cuchara filtra el barro para atrapar crustáceos. Su color rosado, como el flamenco, viene de lo que come.",
+    difficulty: 2,
+    region: "neotropics",
+    xcId: 418905
+  },
+  {
+    id: "b066",
+    nameEs: "Cauquén Común",
+    nameEn: "Upland Goose",
+    scientific: "Chloephaga picta",
+    photoUrl: "Upland goose (Chloephaga picta picta) male Laguna Nimez.jpg",
+    funFact: "El macho es blanco y la hembra marrón, ¡parecen especies diferentes! Es un símbolo de la estepa patagónica.",
+    difficulty: 2,
+    region: "southern-cone",
+    xcId: 368846
+  },
+  {
+    id: "b067",
+    nameEs: "Churrinche",
+    nameEn: "Vermilion Flycatcher",
+    scientific: "Pyrocephalus rubinus",
+    photoUrl: "095 Scarlet Flycatcher in Encontro das Águas State Park Photo by Giles Laurent.jpg",
+    funFact: "El macho es rojo fuego, una de las aves más coloridas de Argentina. Hace un vuelo nupcial espectacular flotando en el aire.",
+    difficulty: 2,
+    region: "south-america",
+    xcId: 956063
+  },
+  {
+    id: "b068",
+    nameEs: "Celestino",
+    nameEn: "Sayaca Tanager",
+    scientific: "Thraupis sayaca",
+    photoUrl: "Thraupis sayaca por Luiz Alves (01).jpg",
+    funFact: "Su nombre viene de su color azul celeste. Es frugívoro y ayuda a dispersar semillas de árboles nativos.",
+    difficulty: 2,
+    region: "south-america",
+    xcId: 572248
+  },
+  {
+    id: "b069",
+    nameEs: "Loro Barranquero",
+    nameEn: "Burrowing Parrot",
+    scientific: "Cyanoliseus patagonus",
+    photoUrl: "Cyanoliseus patagonus - Maroparque 01.jpg",
+    funFact: "Anida en enormes colonias excavando túneles en barrancos. La colonia de El Cóndor, Río Negro, es la más grande del mundo.",
+    difficulty: 2,
+    region: "southern-cone",
+    xcId: 970917
+  },
+  {
+    id: "b070",
+    nameEs: "Jilguero Dorado",
+    nameEn: "Saffron Finch",
+    scientific: "Sicalis flaveola",
+    photoUrl: "Saffron finch (Sicalis flaveola) male.JPG",
+    funFact: "Su canto melodioso lo convirtió en ave de jaula muy codiciada, lo que amenazó sus poblaciones silvestres.",
+    difficulty: 2,
+    region: "south-america",
+    xcId: 1074505
+  },
+  {
+    id: "b071",
+    nameEs: "Tordo Renegrido",
+    nameEn: "Shiny Cowbird",
+    scientific: "Molothrus bonariensis",
+    photoUrl: "Shiny cowbird (Molothrus bonariensis) male.JPG",
+    funFact: "Es un parásito de cría: pone sus huevos en nidos ajenos para que otros pájaros críen a sus pichones. ¡Un vivo bárbaro!",
+    difficulty: 2,
+    region: "south-america",
+    xcId: 568688
+  },
+  {
+    id: "b072",
+    nameEs: "Carpintero Campestre",
+    nameEn: "Campo Flicker",
+    scientific: "Colaptes campestris",
+    photoUrl: "Campo flicker (Colaptes campestris) female.JPG",
+    funFact: "A diferencia de otros carpinteros, busca alimento en el suelo, especialmente hormigas. Se lo ve caminando por pastizales.",
+    difficulty: 2,
+    region: "south-america",
+    xcId: 550443
+  },
+  {
+    id: "b073",
+    nameEs: "Pirincho",
+    nameEn: "Guira Cuckoo",
+    scientific: "Guira guira",
+    photoUrl: "Guira guira MHNT.ZOO.2010.11.2.21.jpg",
+    funFact: "Siempre anda en bandadas ruidosas. Varias hembras ponen en el mismo nido y todos los adultos colaboran en la crianza.",
+    difficulty: 2,
+    region: "south-america",
+    xcId: 294538
+  },
+  {
+    id: "b074",
+    nameEs: "Jote Cabeza Negra",
+    nameEn: "Black Vulture",
+    scientific: "Coragyps atratus",
+    photoUrl: "Coragyps-atratus-001.jpg",
+    funFact: "A diferencia de su pariente el jote cabeza colorada, localiza la carroña por la vista, no por el olfato. Vuela en grupos.",
+    difficulty: 2,
+    region: "south-america",
+    xcId: 929989
+  },
+  // === DIFÍCILES (difficulty 3) ===
+  {
+    id: "b075",
+    nameEs: "Federal",
+    nameEn: "Scarlet-headed Blackbird",
+    scientific: "Amblyramphus holosericeus",
+    photoUrl: "Scarlet-headed blackbird (Amblyramphus holosericeus).JPG",
+    funFact: "Su cabeza rojo escarlata sobre cuerpo negro es inconfundible. Vive exclusivamente en pajonales y esteros del litoral.",
+    difficulty: 3,
+    region: "south-america",
+    xcId: 569462
+  },
+  {
+    id: "b076",
+    nameEs: "Chuña Patas Rojas",
+    nameEn: "Red-legged Seriema",
+    scientific: "Cariama cristata",
+    photoUrl: "Red-legged seriema (Cariama cristata) head.JPG",
+    funFact: "Es pariente lejana de los dinosaurios terópodos. Mata a sus presas (serpientes, lagartijas) golpeándolas contra el suelo.",
+    difficulty: 3,
+    region: "south-america",
+    xcId: 1080149
+  },
+  {
+    id: "b077",
+    nameEs: "Cardenal Amarillo",
+    nameEn: "Yellow Cardinal",
+    scientific: "Gubernatrix cristata",
+    photoUrl: "Gubernatrix cristata - Yellow cardinal (male); Iberá marshes, Corrientes, Argentina.jpg",
+    funFact: "Está en peligro de extinción por la captura para mascotismo. Es endémico del cono sur y uno de los pájaros más buscados por observadores.",
+    difficulty: 3,
+    region: "south-america",
+    xcId: 1032542
+  },
+  {
+    id: "b078",
+    nameEs: "Atajacaminos Tijera",
+    nameEn: "Scissor-tailed Nightjar",
+    scientific: "Hydropsalis torquata",
+    photoUrl: "Hydropsalis torquata in Uruguay.jpg",
+    funFact: "Es nocturno y casi invisible de día gracias a su camuflaje perfecto. El macho tiene plumas timoneras larguísimas en forma de tijera.",
+    difficulty: 3,
+    region: "south-america",
+    xcId: 1053672
+  },
+  {
+    id: "b079",
+    nameEs: "Monjita Blanca",
+    nameEn: "White Monjita",
+    scientific: "Xolmis irupero",
+    photoUrl: "White monjita (Xolmis irupero) Colonia.jpg",
+    funFact: "Su plumaje blanco inmaculado la hace fácil de ver posada en alambrados y postes. Caza insectos al vuelo desde su percha.",
+    difficulty: 3,
+    region: "south-america",
+    xcId: 461422
+  },
+  {
+    id: "b080",
+    nameEs: "Boyero Negro",
+    nameEn: "Solitary Black Cacique",
+    scientific: "Cacicus solitarius",
+    photoUrl: "Cacicus solitarius -Argentina-8.jpg",
+    funFact: "Construye nidos colgantes en forma de bolsa. A pesar de su nombre, a veces se junta en pequeñas colonias.",
+    difficulty: 3,
+    region: "neotropics",
+    xcId: 542221
   }
 ];
 
 // ============================================================
-// TREES — ~50 entries
+// TREES — ~80 entries
 // ============================================================
 const TREES = [
   // --- EASY (difficulty 1) ---
@@ -1099,6 +1434,312 @@ const TREES = [
     funFact: "Sus frutos dulces alimentan a tucanes y monos. Los guaraníes fermentaban su savia para hacer una bebida alcohólica.",
     difficulty: 2,
     region: "south-america"
+  },
+
+  // --- ÁRBOLES ARGENTINOS / RIOPLATENSES ---
+  // === PAMPA / BUENOS AIRES ===
+  {
+    id: "t051",
+    nameEs: "Ombú",
+    nameEn: "Ombu",
+    scientific: "Phytolacca dioica",
+    photoUrl: "Phytolacca_dioica.jpg",
+    funFact: "Técnicamente no es un árbol sino una hierba gigante. Su tronco esponjoso almacena agua y no tiene anillos de crecimiento.",
+    difficulty: 1,
+    region: "south-america"
+  },
+  {
+    id: "t052",
+    nameEs: "Tala",
+    nameEn: "Tala Tree",
+    scientific: "Celtis ehrenbergiana",
+    photoUrl: "Celtis_ehrenbergiana_arbol.jpg",
+    funFact: "Es el árbol emblemático del espinal pampeano. Sus frutos dulces son alimento clave para aves silvestres.",
+    difficulty: 2,
+    region: "south-america"
+  },
+  {
+    id: "t053",
+    nameEs: "Coronillo",
+    nameEn: "Coronillo",
+    scientific: "Scutia buxifolia",
+    photoUrl: "Scutia_buxifolia_337092285.jpg",
+    funFact: "Su madera es tan dura y pesada que se hunde en el agua. Los gauchos la usaban para postes de alambrado por su durabilidad extrema.",
+    difficulty: 3,
+    region: "south-america"
+  },
+  {
+    id: "t054",
+    nameEs: "Caldén",
+    nameEn: "Calden",
+    scientific: "Prosopis caldenia",
+    photoUrl: "Prosopis_caldenia.jpg",
+    funFact: "Es endémico de Argentina, solo crece en La Pampa y alrededores. Los bosques de caldén son uno de los ecosistemas más amenazados del país.",
+    difficulty: 2,
+    region: "south-america"
+  },
+  {
+    id: "t055",
+    nameEs: "Sauce criollo",
+    nameEn: "Humboldt's Willow",
+    scientific: "Salix humboldtiana",
+    photoUrl: "Salix_humboldtiana_form.jpg",
+    funFact: "Es el único sauce nativo de Sudamérica. Crece a orillas de ríos y arroyos desde México hasta la Patagonia.",
+    difficulty: 1,
+    region: "south-america"
+  },
+  // === NOA / NEA SUBTROPICAL ===
+  {
+    id: "t056",
+    nameEs: "Lapacho rosado",
+    nameEn: "Pink Trumpet Tree",
+    scientific: "Handroanthus impetiginosus",
+    photoUrl: "Handroanthus_impetiginosus_(lapacho_rosado)_florecido.jpg",
+    funFact: "Florece espectacularmente en invierno cuando no tiene hojas. Es la flor provincial de Jujuy y Tucumán.",
+    difficulty: 1,
+    region: "neotropics"
+  },
+  {
+    id: "t057",
+    nameEs: "Lapacho amarillo",
+    nameEn: "Yellow Trumpet Tree",
+    scientific: "Handroanthus albus",
+    photoUrl: "Handroanthus_albus_(Cham.)_Mattos.jpg",
+    funFact: "Florece unas semanas después que el lapacho rosado, creando oleadas de color en las selvas del norte argentino.",
+    difficulty: 2,
+    region: "neotropics"
+  },
+  {
+    id: "t058",
+    nameEs: "Guayacán",
+    nameEn: "Guayacan",
+    scientific: "Libidibia paraguariensis",
+    photoUrl: "Libidibia_paraguariensis_in_Chaco_National_Park.jpg",
+    funFact: "Su madera es una de las más duras del mundo, tanto que las herramientas se desgastan al cortarla. Se la llama 'madera de hierro'.",
+    difficulty: 3,
+    region: "neotropics"
+  },
+  {
+    id: "t059",
+    nameEs: "Urunday",
+    nameEn: "Urunday",
+    scientific: "Astronium balansae",
+    photoUrl: "Astronium_balansae.jpg",
+    funFact: "Su madera es prácticamente imputrescible y resiste al agua. Se usa para durmientes de ferrocarril y postes que duran décadas.",
+    difficulty: 3,
+    region: "neotropics"
+  },
+  {
+    id: "t060",
+    nameEs: "Timbó",
+    nameEn: "Ear Pod Tree",
+    scientific: "Enterolobium contortisiliquum",
+    photoUrl: "Enterolobiumcontortisiliquum.jpg",
+    funFact: "Sus frutos tienen forma de oreja humana (de ahí su nombre en inglés). Los pueblos originarios los usaban como jabón natural.",
+    difficulty: 2,
+    region: "neotropics"
+  },
+  {
+    id: "t061",
+    nameEs: "Palo borracho rosado",
+    nameEn: "Silk Floss Tree",
+    scientific: "Ceiba speciosa",
+    photoUrl: "Ceiba_speciosa_1.jpg",
+    funFact: "Su tronco tiene forma de botella (por eso 'borracho') y está cubierto de aguijones. Produce una fibra sedosa similar al algodón.",
+    difficulty: 1,
+    region: "neotropics"
+  },
+  {
+    id: "t062",
+    nameEs: "Ibirá pitá",
+    nameEn: "Yellow Poinciana",
+    scientific: "Peltophorum dubium",
+    photoUrl: "Peltophorum_dubium_%C3%A1rvore.jpg",
+    funFact: "Es el árbol provincial de Misiones. Su nombre guaraní significa 'árbol colorado' por el color rojizo de su madera.",
+    difficulty: 3,
+    region: "neotropics"
+  },
+  {
+    id: "t063",
+    nameEs: "Guatambú",
+    nameEn: "Pau Marfim",
+    scientific: "Balfourodendron riedelianum",
+    photoUrl: "Balfourodendron-riedelianum.jpg",
+    funFact: "Su madera color marfil es tan fina que se usa para fabricar instrumentos musicales y tacos de billar profesionales.",
+    difficulty: 3,
+    region: "neotropics"
+  },
+  // === PATAGONIA ===
+  {
+    id: "t064",
+    nameEs: "Araucaria",
+    nameEn: "Monkey Puzzle Tree",
+    scientific: "Araucaria araucana",
+    photoUrl: "Araucaria_araucana-detail.jpg",
+    funFact: "Es un fósil viviente que ya existía en la época de los dinosaurios. Sus semillas (piñones) eran alimento básico del pueblo mapuche.",
+    difficulty: 1,
+    region: "southern-cone"
+  },
+  {
+    id: "t065",
+    nameEs: "Lenga",
+    nameEn: "Lenga Beech",
+    scientific: "Nothofagus pumilio",
+    photoUrl: "Nothofagus_pumilio.jpg",
+    funFact: "En otoño sus hojas se tiñen de rojo fuego, creando los paisajes más fotografiados de la Patagonia. Crece hasta el límite de la vegetación.",
+    difficulty: 2,
+    region: "southern-cone"
+  },
+  {
+    id: "t066",
+    nameEs: "Coihue",
+    nameEn: "Coigue",
+    scientific: "Nothofagus dombeyi",
+    photoUrl: "Nothofagus_dombeyi.jpg",
+    funFact: "Es el árbol más grande de los bosques patagónicos, puede superar los 40 metros. Es perennifolio, a diferencia de la lenga.",
+    difficulty: 2,
+    region: "southern-cone"
+  },
+  {
+    id: "t067",
+    nameEs: "Ciprés de la cordillera",
+    nameEn: "Chilean Cedar",
+    scientific: "Austrocedrus chilensis",
+    photoUrl: "Austrocedrus_chilensis.jpg",
+    funFact: "Es la conífera más abundante de los bosques andino-patagónicos. El famoso 'Camino de los Siete Lagos' atraviesa sus bosques.",
+    difficulty: 2,
+    region: "southern-cone"
+  },
+  {
+    id: "t068",
+    nameEs: "Alerce",
+    nameEn: "Patagonian Cypress",
+    scientific: "Fitzroya cupressoides",
+    photoUrl: "Fitzroya_cupressoides_(da_Silvio_Rossi).jpg",
+    funFact: "Puede vivir más de 3.600 años, siendo uno de los organismos más longevos del planeta. Está en peligro de extinción.",
+    difficulty: 2,
+    region: "southern-cone"
+  },
+  {
+    id: "t069",
+    nameEs: "Ñire",
+    nameEn: "Antarctic Beech",
+    scientific: "Nothofagus antarctica",
+    photoUrl: "Nothofagus_antarctica_2.jpg",
+    funFact: "Es el árbol que crece más al sur del mundo, llegando hasta Tierra del Fuego. Se adapta a suelos pobres y encharcados.",
+    difficulty: 3,
+    region: "southern-cone"
+  },
+  {
+    id: "t070",
+    nameEs: "Maitén",
+    nameEn: "Maiten",
+    scientific: "Maytenus boaria",
+    photoUrl: "Maytenus_boaria_-_San_Francisco_Botanical_Garden.jpg",
+    funFact: "Sus ramas colgantes le dan un aspecto de sauce llorón. El ganado y los ciervos lo adoran tanto que puede desaparecer de zonas sobrepastoreadas.",
+    difficulty: 3,
+    region: "southern-cone"
+  },
+  // === GENERAL ARGENTINA ===
+  {
+    id: "t071",
+    nameEs: "Algarrobo blanco",
+    nameEn: "White Carob Tree",
+    scientific: "Prosopis alba",
+    photoUrl: "Prosopis_alba.jpg",
+    funFact: "Los pueblos originarios lo llamaban 'el árbol que todo lo da': alimento (patay, aloja), sombra, madera y medicina.",
+    difficulty: 1,
+    region: "south-america"
+  },
+  {
+    id: "t072",
+    nameEs: "Quebracho colorado chaqueño",
+    nameEn: "Red Quebracho",
+    scientific: "Schinopsis balansae",
+    photoUrl: "Schinopsis_balansae.jpg",
+    funFact: "Su nombre viene de 'quiebra-hacha' por la dureza de su madera. Fue explotado masivamente para extraer tanino en el siglo XX.",
+    difficulty: 2,
+    region: "south-america"
+  },
+  {
+    id: "t073",
+    nameEs: "Quebracho blanco",
+    nameEn: "White Quebracho",
+    scientific: "Aspidosperma quebracho-blanco",
+    photoUrl: "Aspidosperma_quebracho-blanco.jpg",
+    funFact: "A diferencia del quebracho colorado, es perennifolio. Su corteza contiene alcaloides que se usaron en medicina contra el asma.",
+    difficulty: 2,
+    region: "south-america"
+  },
+  {
+    id: "t074",
+    nameEs: "Espinillo",
+    nameEn: "Roman Cassie",
+    scientific: "Vachellia caven",
+    photoUrl: "Espinillo_Vachellia_caven.jpg",
+    funFact: "Sus flores amarillas perfumadas aparecen al final del invierno, anunciando la primavera. Es uno de los primeros árboles en florecer.",
+    difficulty: 2,
+    region: "south-america"
+  },
+  {
+    id: "t075",
+    nameEs: "Aguaribay",
+    nameEn: "Peruvian Pepper Tree",
+    scientific: "Schinus areira",
+    photoUrl: "Schinus_molle.jpg",
+    funFact: "Sus frutos rosados se usan como 'pimienta rosa' en gastronomía. Los incas hacían una bebida fermentada llamada 'chicha de molle'.",
+    difficulty: 1,
+    region: "south-america"
+  },
+  {
+    id: "t076",
+    nameEs: "Chañar",
+    nameEn: "Chanar",
+    scientific: "Geoffroea decorticans",
+    photoUrl: "Geoffroea_decorticans0.jpg",
+    funFact: "Su corteza se descáscara naturalmente revelando un tronco liso verde. Su fruto dulce se usa para hacer arrope, un dulce tradicional del NOA.",
+    difficulty: 2,
+    region: "south-america"
+  },
+  {
+    id: "t077",
+    nameEs: "Mistol",
+    nameEn: "Mistol",
+    scientific: "Sarcomphalus mistol",
+    photoUrl: "Sarcomphalus_mistol.jpg",
+    funFact: "Con sus frutos se prepara el 'bolanchao', un dulce tradicional del norte argentino hecho con harina de algarroba y mistol.",
+    difficulty: 3,
+    region: "south-america"
+  },
+  {
+    id: "t078",
+    nameEs: "Molle de beber",
+    nameEn: "Brazilian Pepper Tree",
+    scientific: "Lithraea molleoides",
+    photoUrl: "Lithraea_molleoides_-_whole.jpg",
+    funFact: "Ojo: puede causar dermatitis de contacto similar a la hiedra venenosa. A pesar de esto, en Córdoba se usaba para hacer una bebida fermentada.",
+    difficulty: 3,
+    region: "south-america"
+  },
+  {
+    id: "t079",
+    nameEs: "Tipa",
+    nameEn: "Tipuana",
+    scientific: "Tipuana tipu",
+    photoUrl: "Tipuana_tipu.jpg",
+    funFact: "Es el árbol más plantado en las veredas de Buenos Aires y Tucumán. Sus semillas aladas giran como helicópteros al caer.",
+    difficulty: 1,
+    region: "south-america"
+  },
+  {
+    id: "t080",
+    nameEs: "Cebil colorado",
+    nameEn: "Vilca Tree",
+    scientific: "Anadenanthera colubrina",
+    photoUrl: "Anadenanthera_colubrina_tree.jpg",
+    funFact: "Sus semillas contienen sustancias psicoactivas que los pueblos originarios usaban en ceremonias rituales desde hace miles de años.",
+    difficulty: 3,
+    region: "neotropics"
   }
 ];
 
