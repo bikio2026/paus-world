@@ -128,8 +128,8 @@
       return;
     }
 
-    // Check if this bird has a precompiled xeno-canto recording ID
-    if (!species.xcId) {
+    // Check if this bird has sound (xeno-canto ID or Wikimedia Commons URL)
+    if (!species.xcId && !species.soundUrl) {
       soundBar.style.display = 'none';
       return;
     }
@@ -139,8 +139,12 @@
     soundLabel.textContent = 'Tocá para escuchar 🎵';
     soundBtn.disabled = false;
 
-    // Use direct xeno-canto download URL (works cross-origin with <audio>)
-    audio.src = `https://xeno-canto.org/${species.xcId}/download`;
+    // Use soundUrl (Wikimedia Commons) or xeno-canto download URL
+    if (species.soundUrl) {
+      audio.src = species.soundUrl;
+    } else {
+      audio.src = `https://xeno-canto.org/${species.xcId}/download`;
+    }
     audio.preload = 'none';
     birdSoundReady = true;
   }
@@ -341,7 +345,7 @@
     img.style.opacity = '0';
     placeholder.style.display = 'flex';
 
-    const photoUrl = getPhotoUrl(round.correctSpecies.photoUrl);
+    const photoUrl = round.correctSpecies.photoUrl;
     img.onload = () => {
       img.style.opacity = '1';
       placeholder.style.display = 'none';
