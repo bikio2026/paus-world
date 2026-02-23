@@ -68,6 +68,28 @@
   // ========================================
   // WORLD MAP — simplified SVG continents
   // ========================================
+
+  // Region key → which continents to highlight + dot position (SVG viewBox 360×180)
+  const REGION_COORDS = {
+    'south-america':     { regions: ['south-america'], cx: 85, cy: 115 },
+    'neotropics':        { regions: ['south-america', 'central-america'], cx: 78, cy: 95 },
+    'southern-cone':     { regions: ['south-america'], cx: 80, cy: 145 },
+    'patagonia':         { regions: ['south-america'], cx: 78, cy: 150 },
+    'north-america':     { regions: ['north-america'], cx: 60, cy: 35 },
+    'central-america':   { regions: ['central-america'], cx: 72, cy: 82 },
+    'americas':          { regions: ['north-america', 'central-america', 'south-america'], cx: 75, cy: 80 },
+    'eurasia':           { regions: ['europe', 'asia'], cx: 220, cy: 30 },
+    'europe':            { regions: ['europe'], cx: 175, cy: 25 },
+    'mediterranean':     { regions: ['europe', 'africa'], cx: 185, cy: 48 },
+    'asia':              { regions: ['asia'], cx: 270, cy: 35 },
+    'africa':            { regions: ['africa'], cx: 195, cy: 90 },
+    'sub-saharan-africa':{ regions: ['africa'], cx: 195, cy: 105 },
+    'oceania':           { regions: ['oceania'], cx: 310, cy: 125 },
+    'new-zealand':       { regions: ['oceania'], cx: 342, cy: 152 },
+    'antarctica':        { regions: ['antarctica'], cx: 180, cy: 172 },
+    'worldwide':         { regions: ['north-america', 'central-america', 'south-america', 'europe', 'africa', 'asia', 'oceania'], cx: 180, cy: 90 }
+  };
+
   const WORLD_MAP_PATHS = {
     'north-america': 'M8,50 L10,46 L14,42 L12,38 L10,34 L12,28 L15,22 L20,18 L28,12 L36,8 L44,5 L52,4 L58,5 L64,4 L72,6 L78,10 L84,8 L90,6 L94,8 L98,12 L100,18 L104,24 L106,30 L108,36 L108,42 L106,48 L102,54 L98,58 L94,60 L90,62 L86,64 L82,66 L78,68 L74,66 L70,68 L66,72 L64,76 L60,74 L56,70 L52,66 L48,62 L44,58 L40,54 L36,50 L32,48 L28,46 L24,44 L20,46 L16,48 L12,50 Z M58,4 L56,2 L50,2 L44,4 Z',
     'central-america': 'M64,76 L66,72 L70,74 L74,76 L76,80 L74,82 L72,80 L70,82 L72,86 L70,88 L68,86 L66,84 L64,80 Z M80,78 L84,76 L86,78 L88,80 L86,82 L82,80 Z',
