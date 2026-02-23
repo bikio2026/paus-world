@@ -1212,6 +1212,16 @@
       stroke-width: 1;
     }
 
+    .map-region-label {
+      font-family: var(--font-body);
+      font-size: 10px;
+      fill: var(--green-deep);
+      text-anchor: middle;
+      font-weight: 700;
+      pointer-events: none;
+      letter-spacing: 0.03em;
+    }
+
     /* ========================================
        REPORT SCREEN
        ======================================== */
@@ -1824,7 +1834,7 @@
         </div>
         <!-- Mini world map -->
         <div class="map-container" id="map-container">
-          <div class="map-label">Hábitat</div>
+          <div class="map-label" id="map-label">Hábitat</div>
           <svg id="world-map" viewBox="0 0 360 180" class="world-map" xmlns="http://www.w3.org/2000/svg"></svg>
         </div>
       </div>

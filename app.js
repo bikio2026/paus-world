@@ -111,7 +111,11 @@
       return;
     }
 
+    // Reset to world map viewBox
+    svg.setAttribute('viewBox', '0 0 360 180');
+    svg.style.maxHeight = '140px';
     $('#map-container').style.display = 'block';
+    $('#map-label').textContent = 'Hábitat';
     let html = '';
 
     // Draw all continents
@@ -126,6 +130,79 @@
       <animate attributeName="r" from="6" to="14" dur="1.5s" repeatCount="indefinite"/>
       <animate attributeName="opacity" from="0.6" to="0" dur="1.5s" repeatCount="indefinite"/>
     </circle>`;
+
+    svg.innerHTML = html;
+  }
+
+  // ========================================
+  // ARGENTINA MAP — simplified region polygons
+  // ========================================
+
+  // Simplified Argentina map (viewBox 0 0 200 400)
+  // 6 biogeographic regions as educational zones
+  const AR_MAP_PATHS = {
+    'noa':       'M30,10 L95,10 L100,20 L105,35 L108,55 L105,75 L95,90 L80,95 L60,100 L45,95 L30,85 L20,70 L15,50 L20,30 Z',
+    'nea':       'M105,35 L130,15 L160,10 L180,20 L185,40 L180,65 L170,85 L155,100 L135,110 L115,115 L100,110 L95,90 L105,75 L108,55 Z',
+    'cuyo':      'M15,100 L45,95 L60,100 L65,115 L60,140 L55,165 L50,185 L40,200 L25,210 L12,200 L5,180 L5,155 L8,130 Z',
+    'centro':    'M60,100 L80,95 L95,90 L100,110 L115,115 L120,130 L115,150 L105,165 L90,175 L70,175 L60,165 L55,150 L55,165 L50,185 L55,165 L60,140 L65,115 Z',
+    'pampa':     'M70,175 L90,175 L105,165 L115,150 L120,130 L135,110 L155,100 L170,115 L175,140 L170,165 L160,185 L145,205 L130,220 L110,230 L90,235 L70,230 L55,220 L45,205 L40,200 L50,185 L55,165 L60,165 Z',
+    'patagonia': 'M25,210 L40,200 L45,205 L55,220 L70,230 L90,235 L110,230 L120,240 L125,260 L120,285 L110,310 L100,335 L90,355 L80,370 L70,380 L55,385 L45,375 L40,360 L35,340 L30,315 L25,290 L20,265 L18,240 Z'
+  };
+
+  const AR_REGION_COORDS = {
+    'noa':       { label: 'NOA', cx: 62, cy: 52 },
+    'nea':       { label: 'NEA', cx: 145, cy: 62 },
+    'cuyo':      { label: 'Cuyo', cx: 30, cy: 150 },
+    'centro':    { label: 'Centro', cx: 90, cy: 135 },
+    'pampa':     { label: 'Pampa', cx: 115, cy: 185 },
+    'patagonia': { label: 'Patagonia', cx: 65, cy: 300 }
+  };
+
+  function renderArgentinaMap(regionARArray) {
+    const svg = $('#world-map');
+    if (!svg) return;
+
+    if (!regionARArray || regionARArray.length === 0) {
+      $('#map-container').style.display = 'none';
+      return;
+    }
+
+    // Switch to Argentina portrait viewBox
+    svg.setAttribute('viewBox', '0 0 200 400');
+    svg.style.maxHeight = '200px';
+    $('#map-container').style.display = 'block';
+    $('#map-label').textContent = 'Hábitat en Argentina';
+
+    const isAll = regionARArray.includes('todo');
+    let html = '';
+
+    // Draw Argentina outline (faint border)
+    const allPaths = Object.values(AR_MAP_PATHS).join(' ');
+
+    // Draw all 6 regions
+    for (const [id, path] of Object.entries(AR_MAP_PATHS)) {
+      const isHighlighted = isAll || regionARArray.includes(id);
+      html += `<path d="${path}" class="${isHighlighted ? 'map-highlight' : 'map-land'}" />`;
+    }
+
+    // Add region labels on highlighted areas
+    for (const [id, coords] of Object.entries(AR_REGION_COORDS)) {
+      const isHighlighted = isAll || regionARArray.includes(id);
+      if (isHighlighted) {
+        html += `<text x="${coords.cx}" y="${coords.cy}" class="map-region-label">${coords.label}</text>`;
+      }
+    }
+
+    // Pulsing dot on first highlighted region
+    const firstRegion = isAll ? 'centro' : regionARArray[0];
+    const dot = AR_REGION_COORDS[firstRegion];
+    if (dot) {
+      html += `<circle cx="${dot.cx}" cy="${dot.cy + 12}" r="5" class="map-dot" />`;
+      html += `<circle cx="${dot.cx}" cy="${dot.cy + 12}" r="10" class="map-dot" style="fill:none;stroke:var(--red-soft);stroke-width:1.5;opacity:0.5;">
+        <animate attributeName="r" from="7" to="16" dur="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" from="0.6" to="0" dur="1.5s" repeatCount="indefinite"/>
+      </circle>`;
+    }
 
     svg.innerHTML = html;
   }
@@ -452,8 +529,12 @@
     $('#reveal-fun-fact').textContent = species.funFact;
     $('#reveal-section').classList.add('visible');
 
-    // Render world map
-    renderWorldMap(species.region);
+    // Render map (Argentina for birds-ar, world for others)
+    if (state.category === 'birds-ar' && species.regionAR) {
+      renderArgentinaMap(species.regionAR);
+    } else {
+      renderWorldMap(species.region);
+    }
 
     // After a brief delay, show quote
     setTimeout(() => {

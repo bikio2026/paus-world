@@ -1,7 +1,7 @@
-// Pau's World of Wonder — Service Worker v8 (cache-first for photos)
+// Pau's World of Wonder — Service Worker v9 (cache-first for photos)
 // Caches local photos for offline/fast access, stale-while-revalidate for app files
 
-const CACHE_VERSION = 'paus-v8';
+const CACHE_VERSION = 'paus-v9';
 const PHOTO_CACHE = 'paus-photos-v1';
 
 self.addEventListener('install', () => {
