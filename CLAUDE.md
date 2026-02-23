@@ -2,19 +2,20 @@
 
 ## Stack
 - HTML/CSS/JS monolítico (PWA estática)
-- Service Worker para cache offline
+- Service Worker para cache offline (fotos + sonidos)
 - Deploy: GitHub Pages https://bikio2026.github.io/paus-world/
 - Repo: https://github.com/bikio2026/paus-world
 - Puerto dev: 3045
+- Versión actual: **v2.0** (Argentina Edition)
 
 ## Estructura
-- `index.html` — HTML + CSS
-- `app.js` — Toda la lógica (IIFE)
+- `index.html` — HTML + CSS (incluye SVG inline del ave con albiceleste)
+- `app.js` — Toda la lógica (IIFE, ~1280 líneas)
 - `data.js` — BIRDS (334), TREES (80), QUOTES (75)
-- `sw.js` — Service Worker (paus-v9)
-- `photos/birds/` — Fotos locales (b001-b334)
+- `sw.js` — Service Worker (paus-v10)
+- `photos/birds/` — Fotos locales (b001-b334, ~30MB)
 - `photos/trees/` — Fotos locales (t001-t080)
-- `sounds/birds/` — Sonidos locales (mp3/ogg)
+- `sounds/birds/` — 123 sonidos locales MP3 (15s, 64kbps mono, ~12MB total)
 - `scripts/` — Scripts de generación/descarga (no se deployean)
 
 ## Datos
@@ -22,6 +23,13 @@
 - 80 árboles (t001-t080)
 - 75 frases de autores argentinos
 - Aves argentinas tienen `regionAR: [...]` con regiones biogeográficas
+- 123 aves tienen `soundUrl: "sounds/birds/bXXX.mp3"` (sonido local)
+- ~211 aves sin sonido (especies argentinas raras sin audio online)
+
+## Categorías del quiz
+- **Aves del Mundo** (`birds`): b001-b080, mapa planisferio SVG
+- **Aves de Argentina** (`birds-ar`): b081-b334, mapa Argentina SVG con regiones
+- **Árboles del Mundo** (`trees`): t001-t080, mapa planisferio SVG, música de fondo
 
 ## Regiones argentinas
 | Key | Región |
@@ -34,6 +42,22 @@
 | `patagonia` | Patagonia (Río Negro, Neuquén, Chubut, Sta Cruz, TdF) |
 | `todo` | Todo el país (aves ubicuas) |
 
+## Mapas SVG
+- **Planisferio**: viewBox `0 0 360 180`, constantes `WORLD_MAP_PATHS` y `REGION_COORDS` en app.js
+- **Argentina**: viewBox `0 0 200 400`, constantes `AR_MAP_PATHS` y `AR_REGION_COORDS` en app.js
+- Selección automática: `birds-ar` → mapa Argentina, el resto → planisferio
+
+## Sonidos
+- Todos locales en `sounds/birds/`. No hay streaming remoto.
+- Solo se usa `soundUrl` en data.js (no más `xcId`)
+- El sonido NO se detiene al responder (se puede escuchar después)
+- `stopBirdSound()` se llama al iniciar nueva ronda, ver resultados, o salir
+- Fuentes de los 123 sonidos:
+  - 80 de Xeno-canto (descarga directa por xcId)
+  - 26 de Wikimedia Commons
+  - 9 de sonidosdeaves.cl (Supabase público)
+  - 8 de La Nación guía sonora (JWPlayer CDN)
+
 ## APIs externas — notas importantes
 - **Xeno-canto API v2**: DESCONTINUADA. No usar.
 - **Xeno-canto API v3**: Requiere API key registrada. No la tenemos.
@@ -41,6 +65,8 @@
 - **Xeno-canto species pages**: Bloquean bots con challenge JS (Anubis). No scrapear.
 - **Wikipedia REST API**: Funciona bien para fotos y texto (`/api/rest_v1/page/summary/`)
 - **Wikimedia Commons API**: Funciona bien para búsqueda de archivos audio/foto
+- **sonidosdeaves.cl**: Supabase público, patrón `https://khpildxpvcfmlrlvjxzk.supabase.co/storage/v1/object/public/birdsounds/{UUID}.mp3`
+- **La Nación guía sonora**: JWPlayer CDN, patrón `https://cdn.jwplayer.com/videos/{ID}-hz5z2Tv4.m4a`
 
 ## Admin
 - URL: `#admin` (password: axelpresidente)
