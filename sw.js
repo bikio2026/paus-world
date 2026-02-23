@@ -1,20 +1,21 @@
-// Pau's World of Wonder — Service Worker v9 (cache-first for photos)
-// Caches local photos for offline/fast access, stale-while-revalidate for app files
+// Pau's World of Wonder — Service Worker v10 (cache-first for photos + sounds)
+// Caches local photos and sounds for offline/fast access, stale-while-revalidate for app files
 
-const CACHE_VERSION = 'paus-v9';
+const CACHE_VERSION = 'paus-v10';
 const PHOTO_CACHE = 'paus-photos-v1';
+const SOUND_CACHE = 'paus-sounds-v1';
 
 self.addEventListener('install', () => {
   self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
-  // Clean up old caches but keep current photo cache
+  // Clean up old caches but keep current photo and sound caches
   event.waitUntil(
     caches.keys().then((keys) =>
       Promise.all(
         keys
-          .filter((k) => k !== CACHE_VERSION && k !== PHOTO_CACHE)
+          .filter((k) => k !== CACHE_VERSION && k !== PHOTO_CACHE && k !== SOUND_CACHE)
           .map((k) => caches.delete(k))
       )
     )
@@ -34,6 +35,22 @@ self.addEventListener('fetch', (event) => {
   if (url.pathname.includes('/photos/')) {
     event.respondWith(
       caches.open(PHOTO_CACHE).then((cache) =>
+        cache.match(event.request).then((cached) => {
+          if (cached) return cached;
+          return fetch(event.request).then((response) => {
+            if (response.ok) cache.put(event.request, response.clone());
+            return response;
+          });
+        })
+      )
+    );
+    return;
+  }
+
+  // Sounds: cache-first (serve from cache, fallback to network + cache)
+  if (url.pathname.includes('/sounds/')) {
+    event.respondWith(
+      caches.open(SOUND_CACHE).then((cache) =>
         cache.match(event.request).then((cached) => {
           if (cached) return cached;
           return fetch(event.request).then((response) => {

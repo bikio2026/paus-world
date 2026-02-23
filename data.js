@@ -19,7 +19,7 @@ const BIRDS = [
     funFact: "Los flamencos nacen blancos; su color rosado viene de los carotenoides de las algas y crustáceos que comen.",
     difficulty: 1,
     region: "mediterranean",
-    xcId: 1079050
+    soundUrl: "sounds/birds/b001.mp3"
   },
   {
     id: "b002",
@@ -30,7 +30,7 @@ const BIRDS = [
     funFact: "Su enorme pico es en realidad muy liviano: está hecho de queratina con una estructura interna tipo esponja.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1073033
+    soundUrl: "sounds/birds/b002.mp3"
   },
   {
     id: "b003",
@@ -41,7 +41,7 @@ const BIRDS = [
     funFact: "A pesar de ser símbolo de fuerza, su llamado real es bastante débil; en las películas lo suelen doblar con el grito de un halcón.",
     difficulty: 1,
     region: "north-america",
-    xcId: 535101
+    soundUrl: "sounds/birds/b003.mp3"
   },
   {
     id: "b004",
@@ -52,7 +52,7 @@ const BIRDS = [
     funFact: "El macho incuba el huevo durante 65 días sin comer, soportando temperaturas de -60°C en la Antártida.",
     difficulty: 1,
     region: "antarctica",
-    xcId: 877995
+    soundUrl: "sounds/birds/b004.mp3"
   },
   {
     id: "b005",
@@ -63,7 +63,7 @@ const BIRDS = [
     funFact: "Su corazón late hasta 1.200 veces por minuto y aletea 53 veces por segundo.",
     difficulty: 1,
     region: "north-america",
-    xcId: 1013237
+    soundUrl: "sounds/birds/b005.mp3"
   },
   {
     id: "b006",
@@ -74,7 +74,7 @@ const BIRDS = [
     funFact: "Puede girar la cabeza 270 grados gracias a que tiene 14 vértebras cervicales (los humanos tenemos 7).",
     difficulty: 1,
     region: "eurasia",
-    xcId: 996135
+    soundUrl: "sounds/birds/b006.mp3"
   },
   {
     id: "b007",
@@ -85,7 +85,7 @@ const BIRDS = [
     funFact: "Las 'plumas' del abanico son en realidad coberteras de la cola; la cola real está debajo y es marrón.",
     difficulty: 1,
     region: "asia",
-    xcId: 1077506
+    soundUrl: "sounds/birds/b007.mp3"
   },
   {
     id: "b008",
@@ -96,7 +96,7 @@ const BIRDS = [
     funFact: "Pueden vivir hasta 75 años en cautiverio y forman parejas de por vida.",
     difficulty: 1,
     region: "neotropics",
-    xcId: 1035872
+    soundUrl: "sounds/birds/b008.mp3"
   },
   {
     id: "b009",
@@ -107,7 +107,7 @@ const BIRDS = [
     funFact: "Su bolsa gular puede contener hasta 13 litros de agua, tres veces más que su estómago.",
     difficulty: 1,
     region: "africa",
-    xcId: 343693
+    soundUrl: "sounds/birds/b009.mp3"
   },
   {
     id: "b010",
@@ -118,7 +118,7 @@ const BIRDS = [
     funFact: "Su nido de barro puede pesar hasta 5 kg y siempre orienta la entrada para que no entre el viento directo.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1009595
+    soundUrl: "sounds/birds/b010.mp3"
   },
   {
     id: "b011",
@@ -129,7 +129,7 @@ const BIRDS = [
     funFact: "Originario de Australia, fue una sorpresa total para los europeos que creían que todos los cisnes eran blancos.",
     difficulty: 1,
     region: "oceania",
-    xcId: 954554
+    soundUrl: "sounds/birds/b011.mp3"
   },
   {
     id: "b012",
@@ -140,7 +140,7 @@ const BIRDS = [
     funFact: "Con una envergadura de hasta 3,3 metros, es una de las aves voladoras más grandes del mundo.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1008961
+    soundUrl: "sounds/birds/b012.mp3"
   },
   {
     id: "b013",
@@ -151,7 +151,7 @@ const BIRDS = [
     funFact: "Se considera el ave más inteligente del mundo; puede aprender más de 1.000 palabras y usar conceptos abstractos.",
     difficulty: 1,
     region: "sub-saharan-africa",
-    xcId: 1053186
+    soundUrl: "sounds/birds/b013.mp3"
   },
   {
     id: "b014",
@@ -162,7 +162,7 @@ const BIRDS = [
     funFact: "Su disco facial funciona como una antena parabólica que dirige el sonido hacia sus oídos asimétricos, permitiéndole cazar en total oscuridad.",
     difficulty: 1,
     region: "worldwide",
-    xcId: 1080667
+    soundUrl: "sounds/birds/b014.mp3"
   },
   {
     id: "b015",
@@ -173,7 +173,7 @@ const BIRDS = [
     funFact: "Es el único ave con fosas nasales en la punta del pico, lo que le da un sentido del olfato excepcional.",
     difficulty: 1,
     region: "new-zealand",
-    xcId: 955810
+    soundUrl: "sounds/birds/b015.mp3"
   },
   // --- MEDIUM (difficulty 2) ---
   {
@@ -185,7 +185,7 @@ const BIRDS = [
     funFact: "Se zambulle en el agua a 40 km/h. El diseño del tren bala Shinkansen de Japón está inspirado en la forma de su pico.",
     difficulty: 2,
     region: "eurasia",
-    xcId: 1080666
+    soundUrl: "sounds/birds/b016.mp3"
   },
   {
     id: "b017",
@@ -196,7 +196,7 @@ const BIRDS = [
     funFact: "Era sagrado para los mayas y aztecas. Su nombre viene del náhuatl 'quetzalli', que significa 'pluma preciosa'.",
     difficulty: 2,
     region: "central-america",
-    xcId: 914121
+    soundUrl: "sounds/birds/b017.mp3"
   },
   {
     id: "b018",
@@ -207,7 +207,7 @@ const BIRDS = [
     funFact: "A pesar de ser un ave rapaz, es omnívoro y oportunista: come de todo, desde carroña hasta insectos y frutas.",
     difficulty: 2,
     region: "south-america",
-    xcId: 1050467
+    soundUrl: "sounds/birds/b018.mp3"
   },
   {
     id: "b019",
@@ -218,7 +218,7 @@ const BIRDS = [
     funFact: "Puede golpear el tronco hasta 20 veces por segundo, y su cráneo tiene una estructura esponjosa que amortigua los impactos.",
     difficulty: 2,
     region: "south-america",
-    xcId: 1059681
+    soundUrl: "sounds/birds/b019.mp3"
   },
   {
     id: "b020",
@@ -229,7 +229,7 @@ const BIRDS = [
     funFact: "Es famoso por defender su nido con ataques aéreos muy agresivos, incluso contra personas y animales mucho más grandes.",
     difficulty: 2,
     region: "south-america",
-    xcId: 1078062
+    soundUrl: "sounds/birds/b020.mp3"
   },
   {
     id: "b021",
@@ -240,7 +240,7 @@ const BIRDS = [
     funFact: "Su nombre en casi todos los idiomas imita su canto: 'hup-hup-hup'. Las crías se defienden rociando un líquido fétido.",
     difficulty: 2,
     region: "eurasia",
-    xcId: 1059544
+    soundUrl: "sounds/birds/b021.mp3"
   },
   {
     id: "b022",
@@ -251,7 +251,7 @@ const BIRDS = [
     funFact: "Puede llevar hasta 62 peces en el pico a la vez gracias a una bisagra especial en su mandíbula.",
     difficulty: 2,
     region: "north-america",
-    xcId: 479180
+    soundUrl: "sounds/birds/b022.mp3"
   },
   {
     id: "b023",
@@ -262,7 +262,7 @@ const BIRDS = [
     funFact: "Los machos realizan danzas tan elaboradas que los primeros europeos pensaron que venían del paraíso y no tenían patas.",
     difficulty: 2,
     region: "oceania",
-    xcId: 502248
+    soundUrl: "sounds/birds/b023.mp3"
   },
   {
     id: "b024",
@@ -273,7 +273,7 @@ const BIRDS = [
     funFact: "Su nombre en español imita su canto: '¡bien-te-veo!'. Es uno de los pájaros más ruidosos y agresivos de Sudamérica.",
     difficulty: 2,
     region: "south-america",
-    xcId: 1080134
+    soundUrl: "sounds/birds/b024.mp3"
   },
   {
     id: "b025",
@@ -284,7 +284,7 @@ const BIRDS = [
     funFact: "Tiene la mayor envergadura de todas las aves vivientes (hasta 3,5 m) y puede planear durante horas sin aletear.",
     difficulty: 2,
     region: "antarctica",
-    xcId: 796375
+    soundUrl: "sounds/birds/b025.mp3"
   },
   {
     id: "b026",
@@ -295,7 +295,7 @@ const BIRDS = [
     funFact: "A diferencia de muchas aves, la hembra también canta, a menudo desde el nido para comunicar al macho que traiga comida.",
     difficulty: 2,
     region: "north-america",
-    xcId: 468374
+    soundUrl: "sounds/birds/b026.mp3"
   },
   {
     id: "b027",
@@ -306,7 +306,7 @@ const BIRDS = [
     funFact: "En Australia, los científicos descubrieron que estas cacatúas se enseñan unas a otras a abrir contenedores de basura.",
     difficulty: 2,
     region: "oceania",
-    xcId: 1072324
+    soundUrl: "sounds/birds/b027.mp3"
   },
   {
     id: "b028",
@@ -317,7 +317,7 @@ const BIRDS = [
     funFact: "Filtra el alimento con la cabeza al revés, usando la lengua como una bomba que impulsa agua a través de las láminas del pico.",
     difficulty: 2,
     region: "southern-cone",
-    xcId: 272817
+    soundUrl: "sounds/birds/b028.mp3"
   },
   {
     id: "b029",
@@ -328,7 +328,7 @@ const BIRDS = [
     funFact: "Es la única grulla que puede posarse en árboles porque tiene un dedo prensil trasero que otras grullas perdieron.",
     difficulty: 2,
     region: "sub-saharan-africa",
-    xcId: 1046984
+    soundUrl: "sounds/birds/b029.mp3"
   },
   {
     id: "b030",
@@ -339,7 +339,7 @@ const BIRDS = [
     funFact: "Puede imitar los cantos de decenas de otras aves. Darwin estudió las calandrias de las Galápagos antes que los pinzones.",
     difficulty: 2,
     region: "south-america",
-    xcId: 1080160
+    soundUrl: "sounds/birds/b030.mp3"
   },
   {
     id: "b031",
@@ -350,7 +350,7 @@ const BIRDS = [
     funFact: "Puede quedarse inmóvil como una estatua durante minutos esperando a su presa, y luego atacar en una fracción de segundo.",
     difficulty: 2,
     region: "eurasia",
-    xcId: 1080663
+    soundUrl: "sounds/birds/b031.mp3"
   },
   {
     id: "b032",
@@ -361,7 +361,7 @@ const BIRDS = [
     funFact: "Es el ave nacional de Brasil. Su canto melodioso al amanecer es uno de los sonidos más característicos de los jardines sudamericanos.",
     difficulty: 2,
     region: "south-america",
-    xcId: 1080158
+    soundUrl: "sounds/birds/b032.mp3"
   },
   // --- HARD (difficulty 3) ---
   {
@@ -373,7 +373,7 @@ const BIRDS = [
     funFact: "El macho hace una danza nupcial aérea espectacular, elevándose hasta 30 metros mientras canta para impresionar a la hembra.",
     difficulty: 3,
     region: "americas",
-    xcId: 956063
+    soundUrl: "sounds/birds/b033.mp3"
   },
   {
     id: "b034",
@@ -384,7 +384,7 @@ const BIRDS = [
     funFact: "Construye nidos en forma de bolsa tejida que cuelgan de juncos en los humedales, verdaderas obras de ingeniería aviar.",
     difficulty: 3,
     region: "south-america",
-    xcId: 454419
+    soundUrl: "sounds/birds/b034.mp3"
   },
   {
     id: "b035",
@@ -395,7 +395,7 @@ const BIRDS = [
     funFact: "Mueve su pico en forma de cuchara de lado a lado en el agua para filtrar pequeños animales; su color rosado viene de su dieta.",
     difficulty: 3,
     region: "americas",
-    xcId: 418905
+    soundUrl: "sounds/birds/b035.mp3"
   },
   {
     id: "b036",
@@ -406,7 +406,7 @@ const BIRDS = [
     funFact: "Antes de comer una abeja, la golpea repetidamente contra una rama para quitarle el aguijón. Puede comer 250 abejas al día.",
     difficulty: 3,
     region: "europe",
-    xcId: 1078918
+    soundUrl: "sounds/birds/b036.mp3"
   },
   {
     id: "b037",
@@ -417,7 +417,7 @@ const BIRDS = [
     funFact: "Mata serpientes a patadas: su golpe tiene una fuerza equivalente a 5 veces su peso corporal, aplicada en 15 milisegundos.",
     difficulty: 3,
     region: "sub-saharan-africa",
-    xcId: 518394
+    soundUrl: "sounds/birds/b037.mp3"
   },
   {
     id: "b038",
@@ -428,7 +428,7 @@ const BIRDS = [
     funFact: "Es uno de los colibríes más comunes de Argentina. Su plumaje iridiscente cambia de color según el ángulo de la luz.",
     difficulty: 3,
     region: "south-america",
-    xcId: 1062260
+    soundUrl: "sounds/birds/b038.mp3"
   },
   {
     id: "b039",
@@ -439,7 +439,7 @@ const BIRDS = [
     funFact: "Está en peligro de extinción en la Patagonia continental; el zorro gris introducido casi diezmó su población.",
     difficulty: 3,
     region: "patagonia",
-    xcId: 90547
+    soundUrl: "sounds/birds/b039.mp3"
   },
   {
     id: "b040",
@@ -450,7 +450,7 @@ const BIRDS = [
     funFact: "El macho construye el nido, incuba los huevos de varias hembras y cría a los pichones solo. Es un padre dedicado.",
     difficulty: 3,
     region: "south-america",
-    xcId: 1016004
+    soundUrl: "sounds/birds/b040.mp3"
   },
   {
     id: "b041",
@@ -461,7 +461,7 @@ const BIRDS = [
     funFact: "A pesar de su nombre, no tiene nada que ver con Chile. Se lo llamó así por un error de clasificación de Vigors en 1832.",
     difficulty: 3,
     region: "south-america",
-    xcId: 525651
+    soundUrl: "sounds/birds/b041.mp3"
   },
   {
     id: "b042",
@@ -472,7 +472,7 @@ const BIRDS = [
     funFact: "Vuelve al mismo nido y con la misma pareja cada año. Pueden nadar hasta 150 km en un solo día buscando alimento.",
     difficulty: 2,
     region: "southern-cone",
-    xcId: 1080529
+    soundUrl: "sounds/birds/b042.mp3"
   },
   {
     id: "b043",
@@ -483,7 +483,7 @@ const BIRDS = [
     funFact: "Vive en los cactus del noroeste argentino, excavando cavidades en los cardones que luego usan otras aves.",
     difficulty: 3,
     region: "south-america",
-    xcId: 557938
+    soundUrl: "sounds/birds/b043.mp3"
   },
   {
     id: "b044",
@@ -494,7 +494,7 @@ const BIRDS = [
     funFact: "Duerme en grupos de hasta 6 en un mismo hueco de árbol, con las colas dobladas sobre el cuerpo para caber.",
     difficulty: 3,
     region: "central-america",
-    xcId: 384530
+    soundUrl: "sounds/birds/b044.mp3"
   },
   {
     id: "b045",
@@ -505,7 +505,7 @@ const BIRDS = [
     funFact: "Es capaz de imitar el grito de halcones para asustar a otras aves y robar su comida. Es primo de los cuervos.",
     difficulty: 2,
     region: "north-america",
-    xcId: 555073
+    soundUrl: "sounds/birds/b045.mp3"
   },
   {
     id: "b046",
@@ -516,7 +516,7 @@ const BIRDS = [
     funFact: "Es un parásito de cría: la hembra pone sus huevos en nidos de otras aves para que ellas los críen. Astuto y exitoso.",
     difficulty: 3,
     region: "south-america",
-    xcId: 568689
+    soundUrl: "sounds/birds/b046.mp3"
   },
   {
     id: "b047",
@@ -527,7 +527,7 @@ const BIRDS = [
     funFact: "Es una de las aves más amenazadas de Argentina, con menos de 800 individuos. Fue descubierta recién en 1974.",
     difficulty: 3,
     region: "patagonia",
-    xcId: 1058659
+    soundUrl: "sounds/birds/b047.mp3"
   },
   {
     id: "b048",
@@ -538,7 +538,7 @@ const BIRDS = [
     funFact: "Es la cigüeña más grande del continente americano, con una altura de hasta 1,5 metros y 2,8 m de envergadura.",
     difficulty: 3,
     region: "neotropics",
-    xcId: 657825
+    soundUrl: "sounds/birds/b048.mp3"
   },
   {
     id: "b049",
@@ -549,7 +549,7 @@ const BIRDS = [
     funFact: "Es la única cotorra que construye nidos comunitarios de ramas, creando 'edificios' de hasta 200 kg con múltiples cámaras.",
     difficulty: 2,
     region: "south-america",
-    xcId: 1072635
+    soundUrl: "sounds/birds/b049.mp3"
   },
   {
     id: "b050",
@@ -560,7 +560,7 @@ const BIRDS = [
     funFact: "Es la garza más grande de Sudamérica. Su paciencia cazando es legendaria: puede estar inmóvil más de 30 minutos.",
     difficulty: 2,
     region: "south-america",
-    xcId: 381844
+    soundUrl: "sounds/birds/b050.mp3"
   },
 
   // --- AVES ARGENTINAS / RIOPLATENSES ---
@@ -574,7 +574,7 @@ const BIRDS = [
     funFact: "Es el ave nacional de Argentina. Construye su nido de barro en forma de horno, que puede pesar hasta 5 kg.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1009595
+    soundUrl: "sounds/birds/b051.mp3"
   },
   {
     id: "b052",
@@ -585,7 +585,7 @@ const BIRDS = [
     funFact: "Es una de las mejores cantoras de Argentina. Puede imitar el canto de más de 20 especies diferentes.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1080160
+    soundUrl: "sounds/birds/b052.mp3"
   },
   {
     id: "b053",
@@ -596,7 +596,7 @@ const BIRDS = [
     funFact: "Su nombre viene de su canto: '¡bien-te-veo!'. Es omnívoro y hasta puede pescar pequeños peces lanzándose al agua.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1080134
+    soundUrl: "sounds/birds/b053.mp3"
   },
   {
     id: "b054",
@@ -607,7 +607,7 @@ const BIRDS = [
     funFact: "Su copete rojo brillante lo hace inconfundible. Es tan popular que fue introducido en Hawái donde se estableció exitosamente.",
     difficulty: 1,
     region: "south-america",
-    xcId: 552906
+    soundUrl: "sounds/birds/b054.mp3"
   },
   {
     id: "b055",
@@ -618,7 +618,7 @@ const BIRDS = [
     funFact: "Sus plumas nupciales casi la llevaron a la extinción: en el siglo XIX se usaban para decorar sombreros de moda.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1073122
+    soundUrl: "sounds/birds/b055.mp3"
   },
   {
     id: "b056",
@@ -629,7 +629,7 @@ const BIRDS = [
     funFact: "Es el rapaz más común de la pampa. Se adaptó perfectamente a las ciudades y se lo ve en plazas, rutas y basurales.",
     difficulty: 1,
     region: "south-america",
-    xcId: 33369
+    soundUrl: "sounds/birds/b056.mp3"
   },
   {
     id: "b057",
@@ -640,7 +640,7 @@ const BIRDS = [
     funFact: "Más carroñero que cazador, camina por el suelo buscando alimento. En el campo se lo ve seguir al arado para atrapar lombrices.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1050467
+    soundUrl: "sounds/birds/b057.mp3"
   },
   {
     id: "b058",
@@ -651,7 +651,7 @@ const BIRDS = [
     funFact: "Con 3,3 metros de envergadura, es una de las aves voladoras más grandes del mundo. Aparece en el escudo nacional argentino.",
     difficulty: 1,
     region: "southern-cone",
-    xcId: 1008961
+    soundUrl: "sounds/birds/b058.mp3"
   },
   {
     id: "b059",
@@ -662,7 +662,7 @@ const BIRDS = [
     funFact: "Es probablemente el ave más común de Argentina. Su canto matutino es la banda sonora de cualquier jardín del país.",
     difficulty: 1,
     region: "south-america",
-    xcId: 33355
+    soundUrl: "sounds/birds/b059.mp3"
   },
   {
     id: "b060",
@@ -673,7 +673,7 @@ const BIRDS = [
     funFact: "Carlos Gardel era apodado 'El Zorzal Criollo' por su hermoso canto. Es de las primeras aves en cantar al amanecer.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1080158
+    soundUrl: "sounds/birds/b060.mp3"
   },
   {
     id: "b061",
@@ -684,7 +684,7 @@ const BIRDS = [
     funFact: "Es la única cotorra que construye nidos comunales enormes de ramas. Se expandió por el mundo como especie invasora.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1072635
+    soundUrl: "sounds/birds/b061.mp3"
   },
   {
     id: "b062",
@@ -695,7 +695,7 @@ const BIRDS = [
     funFact: "Famoso por su grito de alarma que delata a cualquier intruso. Los gauchos decían que 'el tero avisa lejos del nido' para despistar.",
     difficulty: 1,
     region: "south-america",
-    xcId: 1078062
+    soundUrl: "sounds/birds/b062.mp3"
   },
   {
     id: "b063",
@@ -706,7 +706,7 @@ const BIRDS = [
     funFact: "Es el ave más grande de América. El macho es quien incuba los huevos y cría a los pichones, ¡un padre dedicado!",
     difficulty: 1,
     region: "south-america",
-    xcId: 1016004
+    soundUrl: "sounds/birds/b063.mp3"
   },
   // === MEDIANAS (difficulty 2) ===
   {
@@ -718,7 +718,7 @@ const BIRDS = [
     funFact: "Bucea para pescar y luego se posa con las alas abiertas al sol porque sus plumas no son impermeables.",
     difficulty: 2,
     region: "south-america",
-    xcId: 492257
+    soundUrl: "sounds/birds/b064.mp3"
   },
   {
     id: "b065",
@@ -729,7 +729,7 @@ const BIRDS = [
     funFact: "Su pico en forma de cuchara filtra el barro para atrapar crustáceos. Su color rosado, como el flamenco, viene de lo que come.",
     difficulty: 2,
     region: "neotropics",
-    xcId: 418905
+    soundUrl: "sounds/birds/b065.mp3"
   },
   {
     id: "b066",
@@ -740,7 +740,7 @@ const BIRDS = [
     funFact: "El macho es blanco y la hembra marrón, ¡parecen especies diferentes! Es un símbolo de la estepa patagónica.",
     difficulty: 2,
     region: "southern-cone",
-    xcId: 368846
+    soundUrl: "sounds/birds/b066.mp3"
   },
   {
     id: "b067",
@@ -751,7 +751,7 @@ const BIRDS = [
     funFact: "El macho es rojo fuego, una de las aves más coloridas de Argentina. Hace un vuelo nupcial espectacular flotando en el aire.",
     difficulty: 2,
     region: "south-america",
-    xcId: 956063
+    soundUrl: "sounds/birds/b067.mp3"
   },
   {
     id: "b068",
@@ -762,7 +762,7 @@ const BIRDS = [
     funFact: "Su nombre viene de su color azul celeste. Es frugívoro y ayuda a dispersar semillas de árboles nativos.",
     difficulty: 2,
     region: "south-america",
-    xcId: 572248
+    soundUrl: "sounds/birds/b068.mp3"
   },
   {
     id: "b069",
@@ -773,7 +773,7 @@ const BIRDS = [
     funFact: "Anida en enormes colonias excavando túneles en barrancos. La colonia de El Cóndor, Río Negro, es la más grande del mundo.",
     difficulty: 2,
     region: "southern-cone",
-    xcId: 970917
+    soundUrl: "sounds/birds/b069.mp3"
   },
   {
     id: "b070",
@@ -784,7 +784,7 @@ const BIRDS = [
     funFact: "Su canto melodioso lo convirtió en ave de jaula muy codiciada, lo que amenazó sus poblaciones silvestres.",
     difficulty: 2,
     region: "south-america",
-    xcId: 1074505
+    soundUrl: "sounds/birds/b070.mp3"
   },
   {
     id: "b071",
@@ -795,7 +795,7 @@ const BIRDS = [
     funFact: "Es un parásito de cría: pone sus huevos en nidos ajenos para que otros pájaros críen a sus pichones. ¡Un vivo bárbaro!",
     difficulty: 2,
     region: "south-america",
-    xcId: 568688
+    soundUrl: "sounds/birds/b071.mp3"
   },
   {
     id: "b072",
@@ -806,7 +806,7 @@ const BIRDS = [
     funFact: "A diferencia de otros carpinteros, busca alimento en el suelo, especialmente hormigas. Se lo ve caminando por pastizales.",
     difficulty: 2,
     region: "south-america",
-    xcId: 550443
+    soundUrl: "sounds/birds/b072.mp3"
   },
   {
     id: "b073",
@@ -817,7 +817,7 @@ const BIRDS = [
     funFact: "Siempre anda en bandadas ruidosas. Varias hembras ponen en el mismo nido y todos los adultos colaboran en la crianza.",
     difficulty: 2,
     region: "south-america",
-    xcId: 294538
+    soundUrl: "sounds/birds/b073.mp3"
   },
   {
     id: "b074",
@@ -828,7 +828,7 @@ const BIRDS = [
     funFact: "A diferencia de su pariente el jote cabeza colorada, localiza la carroña por la vista, no por el olfato. Vuela en grupos.",
     difficulty: 2,
     region: "south-america",
-    xcId: 929989
+    soundUrl: "sounds/birds/b074.mp3"
   },
   // === DIFÍCILES (difficulty 3) ===
   {
@@ -840,7 +840,7 @@ const BIRDS = [
     funFact: "Su cabeza rojo escarlata sobre cuerpo negro es inconfundible. Vive exclusivamente en pajonales y esteros del litoral.",
     difficulty: 3,
     region: "south-america",
-    xcId: 569462
+    soundUrl: "sounds/birds/b075.mp3"
   },
   {
     id: "b076",
@@ -851,7 +851,7 @@ const BIRDS = [
     funFact: "Es pariente lejana de los dinosaurios terópodos. Mata a sus presas (serpientes, lagartijas) golpeándolas contra el suelo.",
     difficulty: 3,
     region: "south-america",
-    xcId: 1080149
+    soundUrl: "sounds/birds/b076.mp3"
   },
   {
     id: "b077",
@@ -862,7 +862,7 @@ const BIRDS = [
     funFact: "Está en peligro de extinción por la captura para mascotismo. Es endémico del cono sur y uno de los pájaros más buscados por observadores.",
     difficulty: 3,
     region: "south-america",
-    xcId: 1032542
+    soundUrl: "sounds/birds/b077.mp3"
   },
   {
     id: "b078",
@@ -873,7 +873,7 @@ const BIRDS = [
     funFact: "Es nocturno y casi invisible de día gracias a su camuflaje perfecto. El macho tiene plumas timoneras larguísimas en forma de tijera.",
     difficulty: 3,
     region: "south-america",
-    xcId: 1053672
+    soundUrl: "sounds/birds/b078.mp3"
   },
   {
     id: "b079",
@@ -884,7 +884,7 @@ const BIRDS = [
     funFact: "Su plumaje blanco inmaculado la hace fácil de ver posada en alambrados y postes. Caza insectos al vuelo desde su percha.",
     difficulty: 3,
     region: "south-america",
-    xcId: 461422
+    soundUrl: "sounds/birds/b079.mp3"
   },
   {
     id: "b080",
@@ -895,7 +895,7 @@ const BIRDS = [
     funFact: "Construye nidos colgantes en forma de bolsa. A pesar de su nombre, a veces se junta en pequeñas colonias.",
     difficulty: 3,
     region: "neotropics",
-    xcId: 542221
+    soundUrl: "sounds/birds/b080.mp3"
   }
 ,
   // --- AVES DE BUENOS AIRES (b081-b272) ---
@@ -908,8 +908,7 @@ const BIRDS = [
     funFact: "Prefiere correr antes que volar; su plumaje críptico lo hace casi invisible entre los pastos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","centro","nea"],
-    xcId: 0
+    regionAR: ["pampa","centro","nea"]
   },
   {
     id: "b082",
@@ -920,8 +919,7 @@ const BIRDS = [
     funFact: "Es el macá más grande de Sudamérica y construye nidos flotantes sobre la vegetación acuática.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b083",
@@ -932,8 +930,7 @@ const BIRDS = [
     funFact: "Tiene llamativos mechones blancos a los lados de la cabeza durante la época reproductiva.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro"],
-    xcId: 0
+    regionAR: ["pampa","patagonia","centro"]
   },
   {
     id: "b084",
@@ -944,8 +941,7 @@ const BIRDS = [
     funFact: "Puede hundirse lentamente en el agua como un submarino, sin salpicar.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b085",
@@ -956,8 +952,7 @@ const BIRDS = [
     funFact: "Nada con el cuerpo sumergido y solo el cuello fuera del agua, pareciendo una serpiente.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b086",
@@ -969,8 +964,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Nycticorax%20nycticorax%20-%20Black-crowned%20Night%20Heron%20XC551981.mp3"
+    soundUrl: "sounds/birds/b086.mp3"
   },
   {
     id: "b087",
@@ -981,8 +975,7 @@ const BIRDS = [
     funFact: "Agita sus patas amarillas en el agua para espantar peces y atraparlos más fácil.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b088",
@@ -994,8 +987,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bubulcus%20ibis%20-%20Western%20Cattle%20Egret%20XC463749.mp3"
+    soundUrl: "sounds/birds/b088.mp3"
   },
   {
     id: "b089",
@@ -1006,8 +998,7 @@ const BIRDS = [
     funFact: "Cuando se siente amenazado, estira el cuello y se queda inmóvil imitando un junco.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b090",
@@ -1018,8 +1009,8 @@ const BIRDS = [
     funFact: "Emite un silbido agudo en vuelo que le da su nombre; es la garza más colorida de Argentina.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    soundUrl: "sounds/birds/b090.mp3",
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b091",
@@ -1030,8 +1021,8 @@ const BIRDS = [
     funFact: "Su plumaje rayado imita las cañas del juncal; caza inmóvil como una estatua durante horas.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    soundUrl: "sounds/birds/b091.mp3",
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b092",
@@ -1042,8 +1033,7 @@ const BIRDS = [
     funFact: "Una de las pocas aves que usa herramientas: arroja insectos al agua como carnada para pescar.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b093",
@@ -1054,8 +1044,7 @@ const BIRDS = [
     funFact: "Vuela en formación en V como los gansos; su pico curvo está diseñado para sondear el barro.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b094",
@@ -1066,8 +1055,7 @@ const BIRDS = [
     funFact: "Su grito estridente se escucha a gran distancia; suele anidar en palmeras altas.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b095",
@@ -1078,8 +1066,7 @@ const BIRDS = [
     funFact: "Tiene la cara desnuda de plumas, adaptación para meter la cabeza en el barro sin ensuciarse.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b096",
@@ -1090,8 +1077,7 @@ const BIRDS = [
     funFact: "A diferencia de la cigüeña europea, esta especie no anida en edificios sino en el suelo entre juncos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b097",
@@ -1102,8 +1088,8 @@ const BIRDS = [
     funFact: "Su grito ensordecedor se oye a 3 km; tiene espolones en las alas que usa para pelear.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    soundUrl: "sounds/birds/b097.mp3",
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b098",
@@ -1114,8 +1100,8 @@ const BIRDS = [
     funFact: "Es el único cisne con cuello completamente negro; los pichones viajan sobre la espalda de sus padres.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    soundUrl: "sounds/birds/b098.mp3",
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b099",
@@ -1126,8 +1112,7 @@ const BIRDS = [
     funFact: "Es el cisne más pequeño del mundo y el más primitivo; su nombre imita su canto.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b100",
@@ -1138,8 +1123,8 @@ const BIRDS = [
     funFact: "Debe su nombre a su silbido aflautado; forma parejas de por vida.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    soundUrl: "sounds/birds/b100.mp3",
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b101",
@@ -1150,8 +1135,7 @@ const BIRDS = [
     funFact: "Se encuentra en todos los continentes excepto Europa y Antártida; es un viajero incansable.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b102",
@@ -1162,8 +1146,7 @@ const BIRDS = [
     funFact: "Es el pato más común de los humedales pampeanos; su pico amarillo lo distingue fácilmente.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b103",
@@ -1174,8 +1157,7 @@ const BIRDS = [
     funFact: "Su nombre viene de su hábito de alimentarse en campos de maíz después de la cosecha.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b104",
@@ -1186,8 +1168,7 @@ const BIRDS = [
     funFact: "Tiene un parche celeste iridiscente en las alas que solo se ve cuando vuela.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro"],
-    xcId: 0
+    regionAR: ["pampa","patagonia","centro"]
   },
   {
     id: "b105",
@@ -1198,8 +1179,7 @@ const BIRDS = [
     funFact: "El macho en plumaje nupcial es de un rojo canela intenso, inconfundible en los humedales.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro","cuyo","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","centro","cuyo","patagonia"]
   },
   {
     id: "b106",
@@ -1210,8 +1190,7 @@ const BIRDS = [
     funFact: "Su pico ancho en forma de espátula filtra el agua como una ballena filtra el plancton.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro"],
-    xcId: 0
+    regionAR: ["pampa","patagonia","centro"]
   },
   {
     id: "b107",
@@ -1222,8 +1201,7 @@ const BIRDS = [
     funFact: "El macho tiene el pico rojo brillante y una protuberancia en la base única entre los patos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","centro"],
-    xcId: 0
+    regionAR: ["pampa","centro"]
   },
   {
     id: "b108",
@@ -1234,8 +1212,7 @@ const BIRDS = [
     funFact: "Es el único pato del mundo que es parásito de cría: pone sus huevos en nidos ajenos.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro","nea"],
-    xcId: 0
+    regionAR: ["pampa","centro","nea"]
   },
   {
     id: "b109",
@@ -1246,8 +1223,7 @@ const BIRDS = [
     funFact: "Es uno de los patos más pequeños y coloridos de Sudamérica; muy popular en aviarios.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b110",
@@ -1258,8 +1234,7 @@ const BIRDS = [
     funFact: "A diferencia de otros patos, prefiere posarse en ramas de árboles sobre el agua.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b111",
@@ -1270,8 +1245,7 @@ const BIRDS = [
     funFact: "Su cabeza verde iridiscente y mejillas blancas lo hacen uno de los patos más elegantes.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro"],
-    xcId: 0
+    regionAR: ["pampa","patagonia","centro"]
   },
   {
     id: "b112",
@@ -1282,8 +1256,7 @@ const BIRDS = [
     funFact: "Tiene mejillas blancas y pico rojo con punta azul; vive tanto en agua dulce como salada.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b113",
@@ -1294,8 +1267,7 @@ const BIRDS = [
     funFact: "El macho tiene el pico celeste intenso; su cola rígida actúa como timón bajo el agua.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b114",
@@ -1307,8 +1279,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["pampa","centro","noa"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Parabuteo%20unicinctus%20-%20Harris's%20Hawk%20XC202066.mp3"
+    soundUrl: "sounds/birds/b114.mp3"
   },
   {
     id: "b115",
@@ -1319,8 +1290,7 @@ const BIRDS = [
     funFact: "Vuela bajo sobre los pastizales con las alas en V, buscando roedores y ranas.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b116",
@@ -1331,8 +1301,7 @@ const BIRDS = [
     funFact: "El macho es gris perla y la hembra marrón; patrullan campos abiertos con vuelo lento y elegante.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b117",
@@ -1343,8 +1312,7 @@ const BIRDS = [
     funFact: "Puede mantenerse suspendido en el aire como un helicóptero mientras busca presas en el suelo.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b118",
@@ -1355,8 +1323,7 @@ const BIRDS = [
     funFact: "Es el gavilán más común de Sudamérica; suele posarse en postes a la vera de los caminos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b119",
@@ -1368,8 +1335,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Sharp-shinned_Hawk.ogg"
+    soundUrl: "sounds/birds/b119.mp3"
   },
   {
     id: "b120",
@@ -1381,8 +1347,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Rostrhamus%20sociabilis%20-%20Snail%20Kite%20XC251466.mp3"
+    soundUrl: "sounds/birds/b120.mp3"
   },
   {
     id: "b121",
@@ -1394,8 +1359,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["pampa","centro"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Buteo%20swainsoni%20-%20Swainson's%20Hawk%20XC493363.mp3"
+    soundUrl: "sounds/birds/b121.mp3"
   },
   {
     id: "b122",
@@ -1406,8 +1370,7 @@ const BIRDS = [
     funFact: "Es la rapaz más grande de la pampa; su pecho negro y vientre blanco son inconfundibles.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","centro","patagonia"]
   },
   {
     id: "b123",
@@ -1418,8 +1381,7 @@ const BIRDS = [
     funFact: "Caza caminando por pastizales quemados, atrapando presas que huyen del fuego.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b124",
@@ -1430,8 +1392,7 @@ const BIRDS = [
     funFact: "Es el halcón más pequeño de América; puede ver luz ultravioleta para detectar rastros de orina de roedores.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b125",
@@ -1442,8 +1403,7 @@ const BIRDS = [
     funFact: "Es el animal más rápido del mundo: alcanza 389 km/h en picada. Anida en edificios de Buenos Aires.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b126",
@@ -1454,8 +1414,7 @@ const BIRDS = [
     funFact: "Caza en pareja: uno espanta a la presa y el otro la atrapa en el aire.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","centro","patagonia"]
   },
   {
     id: "b127",
@@ -1466,8 +1425,7 @@ const BIRDS = [
     funFact: "Se distingue de otras gallaretas por sus patas con ligas rojas y escudete frontal amarillo.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b128",
@@ -1478,8 +1436,7 @@ const BIRDS = [
     funFact: "Tiene un escudete amarillo limón en la frente; forma grupos enormes en lagos y lagunas.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b129",
@@ -1490,8 +1447,8 @@ const BIRDS = [
     funFact: "Su escudete rojo sangre la distingue de las demás gallaretas; es la menos gregaria.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro"],
-    xcId: 0
+    soundUrl: "sounds/birds/b129.mp3",
+    regionAR: ["pampa","patagonia","centro"]
   },
   {
     id: "b130",
@@ -1502,8 +1459,7 @@ const BIRDS = [
     funFact: "Camina sobre la vegetación flotante con sus dedos largos; mueve la cabeza al nadar como una paloma.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b131",
@@ -1515,8 +1471,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["nea","pampa"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/PurpleGallinule1.ogg"
+    soundUrl: "sounds/birds/b131.mp3"
   },
   {
     id: "b132",
@@ -1527,8 +1482,7 @@ const BIRDS = [
     funFact: "Es muy esquiva pero su canto potente retumba en los bañados al amanecer y atardecer.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b133",
@@ -1539,8 +1493,7 @@ const BIRDS = [
     funFact: "Se escucha mucho más de lo que se ve; vive oculta entre la vegetación de los humedales.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b134",
@@ -1551,8 +1504,7 @@ const BIRDS = [
     funFact: "Su pico ligeramente torcido a la derecha está perfectamente diseñado para extraer caracoles.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b135",
@@ -1564,8 +1516,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Himantopus%20mexicanus%20-%20Black-necked%20Stilt%20XC99570.mp3"
+    soundUrl: "sounds/birds/b135.mp3"
   },
   {
     id: "b136",
@@ -1576,8 +1527,7 @@ const BIRDS = [
     funFact: "Camina sobre hojas flotantes gracias a sus dedos extremadamente largos; el macho cuida los huevos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b137",
@@ -1588,8 +1538,7 @@ const BIRDS = [
     funFact: "Migra desde el Ártico hasta la pampa, uno de los viajes más largos del mundo aviar.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b138",
@@ -1600,8 +1549,7 @@ const BIRDS = [
     funFact: "Finge tener un ala rota para alejar depredadores de su nido en el suelo.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b139",
@@ -1612,8 +1560,7 @@ const BIRDS = [
     funFact: "Viaja 15.000 km desde el Ártico canadiense hasta los humedales bonaerenses cada año.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b140",
@@ -1624,8 +1571,8 @@ const BIRDS = [
     funFact: "Su vuelo nupcial produce un sonido vibrante con las plumas de la cola, llamado balido.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    soundUrl: "sounds/birds/b140.mp3",
+    regionAR: ["todo"]
   },
   {
     id: "b141",
@@ -1636,8 +1583,7 @@ const BIRDS = [
     funFact: "Viene desde Alaska y Canadá a pasar el verano en los humedales de Buenos Aires.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b142",
@@ -1649,8 +1595,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["pampa","nea"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tringa%20melanoleuca%20-%20Greater%20Yellowlegs%20XC251657.mp3"
+    soundUrl: "sounds/birds/b142.mp3"
   },
   {
     id: "b143",
@@ -1661,8 +1606,7 @@ const BIRDS = [
     funFact: "En verano tiene una capucha marrón oscura que pierde en invierno, quedando con cabeza blanca.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro"],
-    xcId: 0
+    regionAR: ["pampa","patagonia","centro"]
   },
   {
     id: "b144",
@@ -1673,8 +1617,7 @@ const BIRDS = [
     funFact: "Es la gaviota más común de la costa argentina; aprendió a abrir mejillones tirándolos desde altura.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b145",
@@ -1685,8 +1628,7 @@ const BIRDS = [
     funFact: "Vuela rozando el agua con la mandíbula inferior sumergida para atrapar peces al tacto.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea","cuyo"],
-    xcId: 0
+    regionAR: ["nea","cuyo"]
   },
   {
     id: "b146",
@@ -1697,8 +1639,7 @@ const BIRDS = [
     funFact: "Tiene una delicada corona blanca y antifaz negro; pesca zambulléndose en picada.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["cuyo"],
-    xcId: 0
+    regionAR: ["cuyo"]
   },
   {
     id: "b147",
@@ -1709,8 +1650,7 @@ const BIRDS = [
     funFact: "Es el gaviotín más pequeño de Sudamérica; nidifica en bancos de arena de ríos.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["cuyo"],
-    xcId: 0
+    regionAR: ["cuyo"]
   },
   {
     id: "b148",
@@ -1722,8 +1662,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["nea","cuyo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Sterna-hirundo-002.ogg"
+    soundUrl: "sounds/birds/b148.mp3"
   },
   {
     id: "b149",
@@ -1734,8 +1673,7 @@ const BIRDS = [
     funFact: "Es la paloma silvestre más grande de Argentina; su arrullo grave se oye en parques y arboledas.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b150",
@@ -1746,8 +1684,7 @@ const BIRDS = [
     funFact: "Tiene manchas blancas en las alas que la distinguen en vuelo; forma grandes bandadas.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","centro","cuyo","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","centro","cuyo","patagonia"]
   },
   {
     id: "b151",
@@ -1758,8 +1695,7 @@ const BIRDS = [
     funFact: "Es la paloma más abundante de Sudamérica; puede formar bandadas de millones de individuos.",
     difficulty: 1,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b152",
@@ -1770,8 +1706,7 @@ const BIRDS = [
     funFact: "Su canto grave y melancólico es uno de los sonidos más característicos del monte ribereño.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea","centro","noa"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro","noa"]
   },
   {
     id: "b153",
@@ -1782,8 +1717,7 @@ const BIRDS = [
     funFact: "Es la paloma más pequeña de Argentina; busca semillas caminando por el suelo de plazas y jardines.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b154",
@@ -1795,7 +1729,6 @@ const BIRDS = [
     difficulty: 1,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
     soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Columba%20livia%20-%20Rock%20Dove%20XC541143.mp3"
   },
   {
@@ -1808,8 +1741,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["pampa","nea"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Psittacara%20leucophthalmus%20-%20White-eyed%20Parakeet%20XC251432.mp3"
+    soundUrl: "sounds/birds/b155.mp3"
   },
   {
     id: "b156",
@@ -1820,8 +1752,7 @@ const BIRDS = [
     funFact: "Originaria del norte, colonizó Buenos Aires donde forma colonias en huecos de edificios.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b157",
@@ -1832,8 +1763,7 @@ const BIRDS = [
     funFact: "Habita la selva marginal del Delta; es más silencioso que otros loros.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b158",
@@ -1845,8 +1775,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Crotophaga%20sulcirostris%20-%20Groove-billed%20Ani%20XC250728.mp3"
+    soundUrl: "sounds/birds/b158.mp3"
   },
   {
     id: "b159",
@@ -1857,8 +1786,7 @@ const BIRDS = [
     funFact: "Vive en grupos de hasta 20 individuos que comparten la crianza; su plumaje tiene brillo azulado.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b160",
@@ -1870,8 +1798,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["pampa","nea","centro"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tapera%20naevia%20-%20Striped%20Cuckoo%20XC251597.mp3"
+    soundUrl: "sounds/birds/b160.mp3"
   },
   {
     id: "b161",
@@ -1882,8 +1809,7 @@ const BIRDS = [
     funFact: "Corre por las ramas como una ardilla; su cola larga y rojiza es muy llamativa.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b162",
@@ -1895,8 +1821,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bubo%20virginianus%20-%20Great%20Horned%20Owl%20XC428421.mp3"
+    soundUrl: "sounds/birds/b162.mp3"
   },
   {
     id: "b163",
@@ -1907,8 +1832,7 @@ const BIRDS = [
     funFact: "Vive en cuevas en el suelo, a menudo en madrigueras abandonadas de vizcachas o peludos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b164",
@@ -1919,8 +1843,7 @@ const BIRDS = [
     funFact: "Su canto tembloroso se escucha en parques y jardines por la noche; es muy difícil de ver.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b165",
@@ -1931,8 +1854,7 @@ const BIRDS = [
     funFact: "Caza de día volando bajo sobre pastizales; se lo ve en campos abiertos de la provincia.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b166",
@@ -1943,8 +1865,7 @@ const BIRDS = [
     funFact: "Tiene largas orejas de plumas y rayas en el pecho; caza al borde de zonas urbanas.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b167",
@@ -1956,8 +1877,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Glaucidium%20brasilianum%20-%20Ferruginous%20Pygmy%20Owl%20XC214246.mp3"
+    soundUrl: "sounds/birds/b167.mp3"
   },
   {
     id: "b168",
@@ -1969,8 +1889,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["nea","pampa"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Nyctibius%20griseus%20-%20Common%20Potoo%20XC251264.mp3"
+    soundUrl: "sounds/birds/b168.mp3"
   },
   {
     id: "b169",
@@ -1981,8 +1900,7 @@ const BIRDS = [
     funFact: "Pasa casi toda su vida volando; duerme, come y hasta se aparea en el aire.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b170",
@@ -1993,8 +1911,7 @@ const BIRDS = [
     funFact: "Es el picaflor más común de Buenos Aires; su plumaje verde brilla como una esmeralda al sol.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b171",
@@ -2005,8 +1922,7 @@ const BIRDS = [
     funFact: "Su cola dorada lo distingue del Picaflor Común; visita jardines con flores tubulares.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b172",
@@ -2017,8 +1933,7 @@ const BIRDS = [
     funFact: "Es el martín pescador más grande de América; se zambulle desde perchas altas para atrapar peces.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b173",
@@ -2029,8 +1944,7 @@ const BIRDS = [
     funFact: "Mide solo 19 cm; vuela bajo sobre arroyos como una flecha verde.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b174",
@@ -2041,8 +1955,7 @@ const BIRDS = [
     funFact: "Su plumaje blanco y negro ajedrezado lo camufla contra la corteza de los árboles.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro","nea"],
-    xcId: 0
+    regionAR: ["pampa","centro","nea"]
   },
   {
     id: "b175",
@@ -2053,8 +1966,7 @@ const BIRDS = [
     funFact: "Tiene bigotes negros como un mostacho; busca hormigas tanto en troncos como en el suelo.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b176",
@@ -2066,7 +1978,6 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["pampa","nea"],
-    xcId: 0,
     soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Picumnus%20cirratus%20148564302.wav"
   },
   {
@@ -2078,8 +1989,7 @@ const BIRDS = [
     funFact: "Es casi todo blanco, algo muy raro entre carpinteros; vive en grupos familiares.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b178",
@@ -2090,8 +2000,7 @@ const BIRDS = [
     funFact: "Construye enormes nidos de palitos que pueden pesar hasta 50 kg y albergan otras aves.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","centro"],
-    xcId: 0
+    regionAR: ["pampa","centro"]
   },
   {
     id: "b179",
@@ -2102,8 +2011,7 @@ const BIRDS = [
     funFact: "Su canto fuerte y repetitivo domina los matorrales; construye nidos globulares con entrada lateral.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b180",
@@ -2114,8 +2022,7 @@ const BIRDS = [
     funFact: "Construye nidos de palitos con varias cámaras, como un departamento de aves.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro"],
-    xcId: 0
+    regionAR: ["pampa","centro"]
   },
   {
     id: "b181",
@@ -2126,8 +2033,7 @@ const BIRDS = [
     funFact: "Su nido de ramas espinosas es tan grande que a veces lo usan también loros y otras aves.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa","centro"],
-    xcId: 0
+    regionAR: ["nea","pampa","centro"]
   },
   {
     id: "b182",
@@ -2138,8 +2044,8 @@ const BIRDS = [
     funFact: "Teje un nido esférico entre los juncos usando telarañas como pegamento.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro"],
-    xcId: 0
+    soundUrl: "sounds/birds/b182.mp3",
+    regionAR: ["pampa","patagonia","centro"]
   },
   {
     id: "b183",
@@ -2150,8 +2056,7 @@ const BIRDS = [
     funFact: "Vive exclusivamente en juncales y totorales; su canto es un trino rápido y agudo.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b184",
@@ -2162,8 +2067,7 @@ const BIRDS = [
     funFact: "Es muy tímido y se esconde en la maraña; se lo detecta mejor por su canto que por la vista.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b185",
@@ -2174,8 +2078,7 @@ const BIRDS = [
     funFact: "Tiene una cresta despeinada y cola larga; trepa por troncos buscando insectos en la corteza.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro"],
-    xcId: 0
+    regionAR: ["pampa","centro"]
   },
   {
     id: "b186",
@@ -2186,8 +2089,7 @@ const BIRDS = [
     funFact: "Trepa troncos en espiral como un carpintero, pero usa su pico curvo para sondear grietas.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b187",
@@ -2198,8 +2100,7 @@ const BIRDS = [
     funFact: "Excava túneles de hasta un metro en barrancas de tierra para anidar.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro","cuyo"],
-    xcId: 0
+    regionAR: ["pampa","patagonia","centro","cuyo"]
   },
   {
     id: "b188",
@@ -2210,8 +2111,7 @@ const BIRDS = [
     funFact: "Busca insectos junto a arroyos y charcos; en invierno baja desde las sierras a la llanura.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro","cuyo","noa"],
-    xcId: 0
+    regionAR: ["pampa","patagonia","centro","cuyo","noa"]
   },
   {
     id: "b189",
@@ -2222,8 +2122,7 @@ const BIRDS = [
     funFact: "Su cola puede medir el triple que su cuerpo; migra miles de kilómetros cada año.",
     difficulty: 1,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b190",
@@ -2235,8 +2134,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tyrannus%20melancholicus%20-%20Tropical%20Kingbird%20XC250427.mp3"
+    soundUrl: "sounds/birds/b190.mp3"
   },
   {
     id: "b191",
@@ -2247,8 +2145,7 @@ const BIRDS = [
     funFact: "Tiene una ceja amarilla brillante; se posa en sitios expuestos como alambrados y postes.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea","centro","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro","patagonia"]
   },
   {
     id: "b192",
@@ -2259,8 +2156,7 @@ const BIRDS = [
     funFact: "Se posa sobre el lomo del ganado para cazar los insectos que espantan al caminar.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b193",
@@ -2271,8 +2167,7 @@ const BIRDS = [
     funFact: "El macho es negro con un anillo ocular blanco y parches alares blancos visibles en vuelo.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro"],
-    xcId: 0
+    regionAR: ["pampa","patagonia","centro"]
   },
   {
     id: "b194",
@@ -2283,8 +2178,7 @@ const BIRDS = [
     funFact: "Es diminuto y nervioso; mueve la cola constantemente mientras busca insectos entre las hojas.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b195",
@@ -2295,8 +2189,7 @@ const BIRDS = [
     funFact: "Migra desde el Amazonas para reproducirse en Buenos Aires; su silbido es inconfundible.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b196",
@@ -2308,7 +2201,6 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["pampa","nea","centro","noa"],
-    xcId: 0,
     soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Hemitriccus%20margaritaceiventer%20-%20Pearly-vented%20Tody-Tyrant%20XC112724.mp3"
   },
   {
@@ -2320,8 +2212,7 @@ const BIRDS = [
     funFact: "El macho es completamente negro; la hembra parda tiene una ceja clara. Típico de orillas de lagunas.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b198",
@@ -2332,8 +2223,7 @@ const BIRDS = [
     funFact: "Parecido al benteveo pero rayado; migra al norte en invierno.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b199",
@@ -2344,8 +2234,7 @@ const BIRDS = [
     funFact: "Se lo confunde con el benteveo rayado; tiene hábitos más arbóreos y migratorios.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b200",
@@ -2356,8 +2245,7 @@ const BIRDS = [
     funFact: "Es una bolita amarilla que vive escondida entre los juncos; su canto aflautado delata su presencia.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","nea","patagonia"]
   },
   {
     id: "b201",
@@ -2368,8 +2256,8 @@ const BIRDS = [
     funFact: "Mide solo 10 cm y tiene siete colores en su plumaje; vive exclusivamente en juncales.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    soundUrl: "sounds/birds/b201.mp3",
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b202",
@@ -2380,8 +2268,7 @@ const BIRDS = [
     funFact: "Blanca con coronilla negra; se posa en postes y alambrados de la pampa.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro"],
-    xcId: 0
+    regionAR: ["pampa","centro"]
   },
   {
     id: "b203",
@@ -2392,8 +2279,7 @@ const BIRDS = [
     funFact: "Tiene un pico más ancho y plano que el benteveo común; come frutas además de insectos.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b204",
@@ -2404,8 +2290,7 @@ const BIRDS = [
     funFact: "Migratoria y esquiva; habita el sotobosque denso del bosque ribereño.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b205",
@@ -2417,7 +2302,6 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["pampa","nea","centro"],
-    xcId: 0,
     soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Pachyramphus%20polychopterus%20-%20White-winged%20Becard%20XC249870.mp3"
   },
   {
@@ -2429,8 +2313,7 @@ const BIRDS = [
     funFact: "Tiene un pico aserrado con el que corta hojas y brotes tiernos; es una de las pocas aves herbívoras.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro","cuyo","noa"],
-    xcId: 0
+    regionAR: ["pampa","centro","cuyo","noa"]
   },
   {
     id: "b207",
@@ -2442,8 +2325,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cyclarhis%20gujanensis%20-%20Rufous-browed%20Peppershrike%20XC242518.mp3"
+    soundUrl: "sounds/birds/b207.mp3"
   },
   {
     id: "b208",
@@ -2454,8 +2336,7 @@ const BIRDS = [
     funFact: "Canta incansablemente durante horas desde la copa de los árboles; difícil de ver, fácil de oír.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b209",
@@ -2466,8 +2347,7 @@ const BIRDS = [
     funFact: "Anida en huecos de edificios y bajo techos; caza insectos en vuelo acrobático sobre la ciudad.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b210",
@@ -2478,8 +2358,7 @@ const BIRDS = [
     funFact: "Tiene la rabadilla blanca que destella al volar; una de las primeras en llegar en primavera.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea","centro","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro","patagonia"]
   },
   {
     id: "b211",
@@ -2490,8 +2369,7 @@ const BIRDS = [
     funFact: "No construye nido propio: usurpa nidos de horneros y otras aves.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b212",
@@ -2503,8 +2381,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Hirundo_rustica_-_Barn_Swallow_-_XC83449.ogg"
+    soundUrl: "sounds/birds/b212.mp3"
   },
   {
     id: "b213",
@@ -2516,7 +2393,6 @@ const BIRDS = [
     difficulty: 1,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
     soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Troglodytes%20aedon%20-%20House%20Wren%20XC295148.mp3"
   },
   {
@@ -2528,8 +2404,7 @@ const BIRDS = [
     funFact: "Diminuta y hiperactiva, mueve la cola larga de lado a lado mientras busca insectos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","centro","nea"],
-    xcId: 0
+    regionAR: ["pampa","centro","nea"]
   },
   {
     id: "b215",
@@ -2541,8 +2416,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Turdus%20amaurochalinus%20-%20Creamy-bellied%20Thrush%20XC297341.mp3"
+    soundUrl: "sounds/birds/b215.mp3"
   },
   {
     id: "b216",
@@ -2553,8 +2427,7 @@ const BIRDS = [
     funFact: "Tiene una banda alar blanca visible en vuelo; imita cantos de otras aves como toda buena calandria.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","centro","cuyo","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","centro","cuyo","patagonia"]
   },
   {
     id: "b217",
@@ -2565,8 +2438,7 @@ const BIRDS = [
     funFact: "Camina por el pasto moviendo la cola; su canto en vuelo ascendente es típico de la pampa abierta.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b218",
@@ -2577,8 +2449,7 @@ const BIRDS = [
     funFact: "El macho es azul y naranja brillante; una de las aves más coloridas de los jardines porteños.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b219",
@@ -2589,8 +2460,7 @@ const BIRDS = [
     funFact: "Tiene cabeza roja intensa y pico amarillo; habita zonas húmedas y ribereñas.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b220",
@@ -2601,8 +2471,7 @@ const BIRDS = [
     funFact: "El macho es turquesa brillante; captura insectos en vuelo como una golondrina.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b221",
@@ -2613,8 +2482,7 @@ const BIRDS = [
     funFact: "El macho tiene un collar negro; es uno de los semilleros más comunes en pastizales y baldíos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b222",
@@ -2626,8 +2494,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Sicalis%20luteola%20-%20Grassland%20Yellow%20Finch%20XC243097.mp3"
+    soundUrl: "sounds/birds/b222.mp3"
   },
   {
     id: "b223",
@@ -2638,8 +2505,7 @@ const BIRDS = [
     funFact: "Su canto melodioso lo hizo popular como ave de jaula; el macho tiene capucha negra y cuerpo amarillo.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b224",
@@ -2651,7 +2517,6 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["pampa","nea","centro"],
-    xcId: 0,
     soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Embernagra%20platensis%20-%20Pampa%20Finch%20XC112723.mp3"
   },
   {
@@ -2663,8 +2528,7 @@ const BIRDS = [
     funFact: "Pequeño y discreto; vive en pastizales donde corre entre las matas como un ratón.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b226",
@@ -2675,8 +2539,7 @@ const BIRDS = [
     funFact: "Su cola larga y puntiaguda le da un perfil único; canta desde lo alto de los pastos.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b227",
@@ -2687,8 +2550,7 @@ const BIRDS = [
     funFact: "Su pico naranja brillante destaca contra el plumaje gris; canta desde arbustos densos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea","noa"],
-    xcId: 0
+    regionAR: ["nea","noa"]
   },
   {
     id: "b228",
@@ -2700,8 +2562,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["nea","noa"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Saltator%20coerulescens%20-%20Greyish%20Saltator%20XC251469.mp3"
+    soundUrl: "sounds/birds/b228.mp3"
   },
   {
     id: "b229",
@@ -2712,8 +2573,8 @@ const BIRDS = [
     funFact: "El macho es azul ultramar intenso; su canto aflautado se escucha en bosques ribereños.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    soundUrl: "sounds/birds/b229.mp3",
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b230",
@@ -2724,8 +2585,7 @@ const BIRDS = [
     funFact: "El macho es rojo ladrillo; la hembra amarillo verdosa. Habita copas de árboles altos.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","noa","centro"],
-    xcId: 0
+    regionAR: ["nea","noa","centro"]
   },
   {
     id: "b231",
@@ -2737,8 +2597,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["pampa","nea"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Setophaga%20pitiayumi%20-%20Tropical%20Parula%20XC541693.mp3"
+    soundUrl: "sounds/birds/b231.mp3"
   },
   {
     id: "b232",
@@ -2749,8 +2608,7 @@ const BIRDS = [
     funFact: "El macho tiene antifaz negro; vive oculto en juncales pero su canto rítmico lo delata.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b233",
@@ -2761,8 +2619,7 @@ const BIRDS = [
     funFact: "A diferencia de otros tordos, cría sus propios pichones; a veces usurpa nidos de horneros.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b234",
@@ -2773,8 +2630,8 @@ const BIRDS = [
     funFact: "El macho negro con charreteras amarillas se posa en juncos como si estuviera en un escenario.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea","patagonia"],
-    xcId: 0
+    soundUrl: "sounds/birds/b234.mp3",
+    regionAR: ["pampa","nea","patagonia"]
   },
   {
     id: "b235",
@@ -2785,8 +2642,7 @@ const BIRDS = [
     funFact: "El macho infla su pecho rojo escarlata mientras canta posado en un poste; espectáculo de la pampa.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b236",
@@ -2798,7 +2654,6 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["pampa","nea","centro"],
-    xcId: 0,
     soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Molothrus_rufoaxillaris_-_Screaming_Cowbird_XC202071.mp3"
   },
   {
@@ -2810,8 +2665,7 @@ const BIRDS = [
     funFact: "Su pecho amarillo brillante ilumina los bañados donde vive en grupos ruidosos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b238",
@@ -2822,8 +2676,7 @@ const BIRDS = [
     funFact: "Visitante invernal de la pampa; su pecho rojo escarlata y canto melancólico son inconfundibles.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia","centro"],
-    xcId: 0
+    regionAR: ["pampa","patagonia","centro"]
   },
   {
     id: "b239",
@@ -2834,8 +2687,7 @@ const BIRDS = [
     funFact: "El macho tiene una cresta roja oculta que despliega como una llama cuando se excita.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","centro","noa"],
-    xcId: 0
+    regionAR: ["nea","centro","noa"]
   },
   {
     id: "b240",
@@ -2846,8 +2698,7 @@ const BIRDS = [
     funFact: "El macho tiene garganta púrpura y vientre amarillo; come frutos de muérdago y dispersa sus semillas.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro","noa"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro","noa"]
   },
   {
     id: "b241",
@@ -2858,8 +2709,7 @@ const BIRDS = [
     funFact: "Camina por el suelo del bosque como un ratoncito; su silbido melodioso resuena en la selva marginal.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b242",
@@ -2871,7 +2721,6 @@ const BIRDS = [
     difficulty: 1,
     region: "south-america",
     regionAR: ["todo"],
-    xcId: 0,
     soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Passer%20domesticus%20-%20House%20Sparrow%20XC152772.mp3"
   },
   {
@@ -2884,8 +2733,7 @@ const BIRDS = [
     difficulty: 2,
     region: "south-america",
     regionAR: ["pampa"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Sturnus%20vulgaris.ogg"
+    soundUrl: "sounds/birds/b243.mp3"
   },
   {
     id: "b244",
@@ -2896,8 +2744,7 @@ const BIRDS = [
     funFact: "Sus patas articuladas le permiten meter la garra en huecos de árboles para extraer presas.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b245",
@@ -2908,8 +2755,7 @@ const BIRDS = [
     funFact: "Caza libélulas y cigarras en vuelo con increíble agilidad; migra al norte en invierno.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b246",
@@ -2920,8 +2766,7 @@ const BIRDS = [
     funFact: "Come garrapatas del lomo del ganado; tiene la cabeza amarilla crema que lo distingue del chimango.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b247",
@@ -2932,8 +2777,8 @@ const BIRDS = [
     funFact: "El macho tiene una máscara negra y pico celeste; es tan escurridizo que rara vez se lo ve.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    soundUrl: "sounds/birds/b247.mp3",
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b248",
@@ -2944,8 +2789,7 @@ const BIRDS = [
     funFact: "Tiene dos bandas pectorales negras en vez de una; visitante invernal en las costas de Buenos Aires.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","patagonia"]
   },
   {
     id: "b249",
@@ -2957,8 +2801,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["pampa","patagonia"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Calidris%20melanotos%20-%20Pectoral%20Sandpiper%20XC250563.mp3"
+    soundUrl: "sounds/birds/b249.mp3"
   },
   {
     id: "b250",
@@ -2969,8 +2812,7 @@ const BIRDS = [
     funFact: "Visitante invernal de la pampa; corre por el suelo atrapando insectos con movimientos rápidos.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["patagonia","pampa"],
-    xcId: 0
+    regionAR: ["patagonia","pampa"]
   },
   {
     id: "b251",
@@ -2981,8 +2823,7 @@ const BIRDS = [
     funFact: "Tan pequeño que se confunde con un insecto; su silbido ascendente es su mejor carta de presentación.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b252",
@@ -2993,8 +2834,8 @@ const BIRDS = [
     funFact: "Visitante invernal; más robusto y oscuro que el zorzal colorado, con pico anaranjado.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    soundUrl: "sounds/birds/b252.mp3",
+    regionAR: ["patagonia"]
   },
   {
     id: "b253",
@@ -3005,8 +2846,7 @@ const BIRDS = [
     funFact: "Está expandiendo su rango hacia Buenos Aires desde el norte; su canto melodioso lo anuncia.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b254",
@@ -3017,8 +2857,7 @@ const BIRDS = [
     funFact: "Visitante invernal de la pampa; más gris y pequeña que la calandria grande.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["patagonia","pampa"],
-    xcId: 0
+    regionAR: ["patagonia","pampa"]
   },
   {
     id: "b255",
@@ -3029,8 +2868,7 @@ const BIRDS = [
     funFact: "Construye nidos comunales más pequeños que los del espinero grande; emite silbidos suaves.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro"],
-    xcId: 0
+    regionAR: ["pampa","centro"]
   },
   {
     id: "b256",
@@ -3041,8 +2879,7 @@ const BIRDS = [
     funFact: "Es completamente negra con brillo azulado; anida bajo techos y aleros en ciudades.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["todo"],
-    xcId: 0
+    regionAR: ["todo"]
   },
   {
     id: "b257",
@@ -3053,8 +2890,7 @@ const BIRDS = [
     funFact: "Vive en pajonales donde se cuelga de los tallos para alimentarse de semillas.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b258",
@@ -3065,8 +2901,7 @@ const BIRDS = [
     funFact: "Es una especie amenazada; el macho tiene vientre canela y canto complejo.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b259",
@@ -3077,8 +2912,7 @@ const BIRDS = [
     funFact: "Más pequeño que el coludo grande; habita pastizales húmedos y su cola es su rasgo distintivo.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b260",
@@ -3090,8 +2924,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["nea","pampa","centro"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Sittasomus%20griseicapillus%20-%20Olivaceous%20Woodcreeper%20XC251549.mp3"
+    soundUrl: "sounds/birds/b260.mp3"
   },
   {
     id: "b261",
@@ -3102,8 +2935,7 @@ const BIRDS = [
     funFact: "Tiene la nuca roja y dorso barrado; habita bosques húmedos del Delta del Paraná.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b262",
@@ -3114,8 +2946,7 @@ const BIRDS = [
     funFact: "Corona rayada y cola rojiza; recorre ramas finas buscando arañas e insectos diminutos.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro","noa"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro","noa"]
   },
   {
     id: "b263",
@@ -3127,8 +2958,7 @@ const BIRDS = [
     difficulty: 3,
     region: "south-america",
     regionAR: ["nea","pampa"],
-    xcId: 0,
-    soundUrl: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Syndactyla%20rufosuperciliata%20-%20Buff-browed%20Foliage-gleaner%20XC250241.mp3"
+    soundUrl: "sounds/birds/b263.mp3"
   },
   {
     id: "b264",
@@ -3139,8 +2969,7 @@ const BIRDS = [
     funFact: "Blanca con antifaz negro; se está expandiendo hacia Buenos Aires desde el norte de Argentina.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b265",
@@ -3151,8 +2980,7 @@ const BIRDS = [
     funFact: "El macho es negro azabache con pico celeste; la hembra es parda con alas rufas.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b266",
@@ -3163,8 +2991,7 @@ const BIRDS = [
     funFact: "Originario del norte, algunas poblaciones asilvestradas se establecieron en parques de Buenos Aires.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b267",
@@ -3175,8 +3002,7 @@ const BIRDS = [
     funFact: "Es una de las lechuzas más misteriosas; su plumaje oscuro y ojos anaranjados son inquietantes.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea","pampa"],
-    xcId: 0
+    regionAR: ["nea","pampa"]
   },
   {
     id: "b268",
@@ -3187,8 +3013,7 @@ const BIRDS = [
     funFact: "Tiene capucha gris lavanda en verano; frecuenta lagunas y bañados del interior de la provincia.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b269",
@@ -3199,8 +3024,7 @@ const BIRDS = [
     funFact: "Visitante invernal; su rabadilla blanca y manto azul verdoso la distinguen en vuelo.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b270",
@@ -3211,8 +3035,7 @@ const BIRDS = [
     funFact: "Sutil y discreto; su canto suave y repetitivo es fácil de pasar por alto entre otros pájaros.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea","centro"],
-    xcId: 0
+    regionAR: ["pampa","nea","centro"]
   },
   {
     id: "b271",
@@ -3223,8 +3046,7 @@ const BIRDS = [
     funFact: "Construye nidos de palitos en arbustos bajos; su cola larga se agita al viento.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","centro","patagonia"],
-    xcId: 0
+    regionAR: ["pampa","centro","patagonia"]
   },
   {
     id: "b272",
@@ -3235,8 +3057,7 @@ const BIRDS = [
     funFact: "Planea sobre campos abiertos buscando serpientes y roedores; su cola blanca brilla al sol.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["pampa","nea"],
-    xcId: 0
+    regionAR: ["pampa","nea"]
   },
   {
     id: "b273",
@@ -3247,8 +3068,7 @@ const BIRDS = [
     funFact: "Su cola iridiscente puede medir hasta 22 cm, mucho más que su cuerpo. Es uno de los colibríes más espectaculares de Sudamérica.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["noa"],
-    xcId: 0
+    regionAR: ["noa"]
   },
   {
     id: "b274",
@@ -3259,8 +3079,7 @@ const BIRDS = [
     funFact: "Es endémico de las yungas del noroeste argentino y Bolivia. Su población está amenazada por la pérdida de bosques de alisos y pinos del cerro.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["noa"],
-    xcId: 0
+    regionAR: ["noa"]
   },
   {
     id: "b275",
@@ -3271,8 +3090,7 @@ const BIRDS = [
     funFact: "Habita pastizales de altura por encima de los 3.000 metros en la Puna. Se alimenta de semillas y brotes resistiendo las heladas nocturnas.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["noa"],
-    xcId: 0
+    regionAR: ["noa"]
   },
   {
     id: "b276",
@@ -3283,8 +3101,7 @@ const BIRDS = [
     funFact: "Es el buitre más colorido del mundo, con piel naranja, roja y violeta en la cabeza. Los otros jotes le ceden el lugar para comer primero.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["noa","nea"],
-    xcId: 0
+    regionAR: ["noa","nea"]
   },
   {
     id: "b277",
@@ -3295,8 +3112,7 @@ const BIRDS = [
     funFact: "Es un rapaz especializado en cazar dentro del bosque denso. Sus patas largas le permiten perseguir presas entre la vegetación cerrada.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["noa","nea"],
-    xcId: 0
+    regionAR: ["noa","nea"]
   },
   {
     id: "b278",
@@ -3307,8 +3123,7 @@ const BIRDS = [
     funFact: "Vive en lagunas de la Puna a más de 3.500 metros de altura. A diferencia de otros gansos, rara vez nada y prefiere caminar por las orillas.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["noa"],
-    xcId: 0
+    regionAR: ["noa"]
   },
   {
     id: "b279",
@@ -3319,8 +3134,7 @@ const BIRDS = [
     funFact: "Es el único trogón de Argentina. Su pecho rojo brillante y espalda azul iridiscente lo hacen inconfundible en las selvas del norte.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["noa","nea"],
-    xcId: 0
+    regionAR: ["noa","nea"]
   },
   {
     id: "b280",
@@ -3331,8 +3145,7 @@ const BIRDS = [
     funFact: "Camina por el fondo de arroyos de montaña buscando larvas de insectos. Es el único paseriforme verdaderamente acuático de Argentina.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["noa"],
-    xcId: 0
+    regionAR: ["noa"]
   },
   {
     id: "b281",
@@ -3343,8 +3156,7 @@ const BIRDS = [
     funFact: "Es una de las aves más grandes de las yungas. Dispersa semillas de árboles nativos por lo que es vital para la regeneración del bosque.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["noa","nea"],
-    xcId: 0
+    regionAR: ["noa","nea"]
   },
   {
     id: "b282",
@@ -3355,8 +3167,7 @@ const BIRDS = [
     funFact: "Es endémico de Argentina, encontrándose solo en la estepa patagónica y el monte cuyano. Su plumaje negro azabache le da el nombre.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["noa","cuyo","patagonia"],
-    xcId: 0
+    regionAR: ["noa","cuyo","patagonia"]
   },
   {
     id: "b283",
@@ -3367,8 +3178,7 @@ const BIRDS = [
     funFact: "Es el trepador más grande de Argentina. Su pico robusto y curvo le permite arrancar corteza para encontrar insectos escondidos en los quebrachales.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["noa","centro"],
-    xcId: 0
+    regionAR: ["noa","centro"]
   },
   {
     id: "b284",
@@ -3379,8 +3189,7 @@ const BIRDS = [
     funFact: "Sobrevive a noches heladas a 4.000 metros entrando en torpor, bajando su temperatura corporal de 40°C a solo 7°C para ahorrar energía.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["noa"],
-    xcId: 0
+    regionAR: ["noa"]
   },
   {
     id: "b285",
@@ -3391,8 +3200,7 @@ const BIRDS = [
     funFact: "Es el ñandú de la Puna, más pequeño y con plumaje más moteado que el ñandú común. Habita mesetas por encima de los 3.500 metros.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["noa"],
-    xcId: 0
+    regionAR: ["noa"]
   },
   {
     id: "b286",
@@ -3403,8 +3211,7 @@ const BIRDS = [
     funFact: "Está en peligro crítico de extinción en Argentina. Quedan menos de 200 ejemplares en la selva misionera, donde dispersa semillas del palmito.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b287",
@@ -3415,8 +3222,7 @@ const BIRDS = [
     funFact: "Su plumaje amarillo dorado lo distingue de otros tucanes. Es un especialista de la selva atlántica misionera y está clasificado como casi amenazado.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b288",
@@ -3427,8 +3233,7 @@ const BIRDS = [
     funFact: "Es el águila más poderosa del mundo, con garras del tamaño de las de un oso. En Argentina solo se la encuentra en las selvas de Misiones.",
     difficulty: 1,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b289",
@@ -3439,8 +3244,7 @@ const BIRDS = [
     funFact: "Tiene al menos 6 colores diferentes en su plumaje. Vive en bandadas mixtas en la selva misionera y se alimenta principalmente de frutas.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b290",
@@ -3451,8 +3255,7 @@ const BIRDS = [
     funFact: "Construye nidos colgantes de hasta 1 metro de largo en colonias ruidosas. Su canto es un gorjeo líquido inconfundible que resuena en la selva.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b291",
@@ -3463,8 +3266,7 @@ const BIRDS = [
     funFact: "Es endémica de la selva atlántica y está amenazada. Vive en grupos familiares y esconde semillas de araucaria que luego olvida, ayudando a reforestar.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b292",
@@ -3475,8 +3277,7 @@ const BIRDS = [
     funFact: "Es el tucán más austral del mundo, llegando hasta Misiones. Su pecho rojo y pico verde lo distinguen del tucán toco.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b293",
@@ -3487,8 +3288,7 @@ const BIRDS = [
     funFact: "Es el tinamú más grande de la selva misionera. Su canto melancólico al amanecer es uno de los sonidos más emblemáticos del monte.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b294",
@@ -3499,8 +3299,7 @@ const BIRDS = [
     funFact: "Los machos hacen una danza coordinada en grupo para impresionar a la hembra. Solo el macho dominante logra aparearse después del espectáculo.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["nea"],
-    xcId: 0
+    regionAR: ["nea"]
   },
   {
     id: "b295",
@@ -3511,8 +3310,7 @@ const BIRDS = [
     funFact: "Habita las yungas y selvas de montaña del norte argentino. Su corona dorada solo se ve cuando eriza las plumas de la cabeza.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["noa","nea"],
-    xcId: 0
+    regionAR: ["noa","nea"]
   },
   {
     id: "b296",
@@ -3523,8 +3321,7 @@ const BIRDS = [
     funFact: "Es una de las aves rapaces más amenazadas de Argentina, con menos de 1.000 parejas. Necesita grandes territorios en el monte y la estepa para cazar.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["cuyo","centro","noa"],
-    xcId: 0
+    regionAR: ["cuyo","centro","noa"]
   },
   {
     id: "b297",
@@ -3535,8 +3332,7 @@ const BIRDS = [
     funFact: "Es endémico de Argentina, viviendo solo en las estepas arenosas del centro-oeste. Corre por el suelo como una perdiz y rara vez vuela.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["cuyo"],
-    xcId: 0
+    regionAR: ["cuyo"]
   },
   {
     id: "b298",
@@ -3547,8 +3343,7 @@ const BIRDS = [
     funFact: "Construye nidos enormes de palitos en arbustos espinosos del monte cuyano. El nido puede alcanzar medio metro de diámetro.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["cuyo","noa"],
-    xcId: 0
+    regionAR: ["cuyo","noa"]
   },
   {
     id: "b299",
@@ -3559,8 +3354,7 @@ const BIRDS = [
     funFact: "Construye nidos comunales gigantes de ramas que pueden pesar hasta 50 kg. Los reutiliza y agranda año tras año.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["cuyo","centro"],
-    xcId: 0
+    regionAR: ["cuyo","centro"]
   },
   {
     id: "b300",
@@ -3571,8 +3365,7 @@ const BIRDS = [
     funFact: "Corre por el suelo del monte a toda velocidad con su cola levantada. Su canto explosivo y repentino sobresalta a cualquiera que camine por el monte.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["cuyo","centro","patagonia"],
-    xcId: 0
+    regionAR: ["cuyo","centro","patagonia"]
   },
   {
     id: "b301",
@@ -3583,8 +3376,7 @@ const BIRDS = [
     funFact: "Excava túneles de hasta 1 metro de largo en barrancas para nidificar. Habita la precordillera cuyana desde los 2.000 a los 4.000 metros.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["cuyo","noa"],
-    xcId: 0
+    regionAR: ["cuyo","noa"]
   },
   {
     id: "b302",
@@ -3595,8 +3387,7 @@ const BIRDS = [
     funFact: "Tiene un pico con gancho especial para perforar la base de las flores y robar néctar sin polinizarlas. Es un experto 'ladrón de flores'.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["cuyo","noa"],
-    xcId: 0
+    regionAR: ["cuyo","noa"]
   },
   {
     id: "b303",
@@ -3607,8 +3398,7 @@ const BIRDS = [
     funFact: "Vive en los páramos andinos más altos de Argentina, superando los 4.500 metros. Su plumaje gris plomizo lo camufla entre las rocas volcánicas.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["cuyo","noa"],
-    xcId: 0
+    regionAR: ["cuyo","noa"]
   },
   {
     id: "b304",
@@ -3619,8 +3409,7 @@ const BIRDS = [
     funFact: "Es el rapaz más variable de Argentina: hay individuos blancos, grises, marrones y negros. Puede cazar desde las montañas hasta el nivel del mar.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["cuyo","patagonia","noa"],
-    xcId: 0
+    regionAR: ["cuyo","patagonia","noa"]
   },
   {
     id: "b305",
@@ -3631,8 +3420,8 @@ const BIRDS = [
     funFact: "Sus ojos rojo fuego son su rasgo más llamativo. Habita los bosques andino-patagónicos y se posa en ramas expuestas para cazar insectos al vuelo.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["cuyo","patagonia"],
-    xcId: 0
+    soundUrl: "sounds/birds/b305.mp3",
+    regionAR: ["cuyo","patagonia"]
   },
   {
     id: "b306",
@@ -3643,8 +3432,7 @@ const BIRDS = [
     funFact: "Forma bandadas enormes en la Puna cuyana. El macho es completamente negro con parches amarillos en las alas que destella al volar.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["cuyo","noa"],
-    xcId: 0
+    regionAR: ["cuyo","noa"]
   },
   {
     id: "b307",
@@ -3655,8 +3443,7 @@ const BIRDS = [
     funFact: "A pesar de su nombre 'rey del bosque', es un ave discreta que se mueve silenciosamente por el dosel. Su canto suave y melodioso delata su presencia.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["centro","nea"],
-    xcId: 0
+    regionAR: ["centro","nea"]
   },
   {
     id: "b308",
@@ -3667,8 +3454,7 @@ const BIRDS = [
     funFact: "Su canto flautado es uno de los más bellos del bosque serrano cordobés. Se lo escucha especialmente al amanecer desde lo alto de los molles.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["centro","nea"],
-    xcId: 0
+    regionAR: ["centro","nea"]
   },
   {
     id: "b309",
@@ -3679,8 +3465,7 @@ const BIRDS = [
     funFact: "Es el carpintero más grande de Sudamérica. El macho tiene una cresta roja espectacular. Sus golpes en los lengas se oyen a cientos de metros.",
     difficulty: 1,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b310",
@@ -3691,8 +3476,7 @@ const BIRDS = [
     funFact: "A diferencia de su prima la chuña patas rojas, prefiere el monte chaqueño. Mata serpientes golpeándolas contra el suelo con una fuerza sorprendente.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["centro","noa"],
-    xcId: 0
+    regionAR: ["centro","noa"]
   },
   {
     id: "b311",
@@ -3703,8 +3487,7 @@ const BIRDS = [
     funFact: "Es un cazador sigiloso del bosque serrano. Sus alas cortas y cola larga le permiten maniobrar a gran velocidad entre los árboles.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["centro","noa","nea"],
-    xcId: 0
+    regionAR: ["centro","noa","nea"]
   },
   {
     id: "b312",
@@ -3715,8 +3498,7 @@ const BIRDS = [
     funFact: "Sus parches amarillos en las alas lo distinguen del boyero negro. Construye nidos colgantes y forma colonias ruidosas en el bosque serrano.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["centro","nea"],
-    xcId: 0
+    regionAR: ["centro","nea"]
   },
   {
     id: "b313",
@@ -3727,8 +3509,7 @@ const BIRDS = [
     funFact: "Es el loro de mayor altitud en Argentina, viviendo por encima de los 3.000 metros. Anida en barrancas rocosas y resiste temperaturas bajo cero.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["centro","noa","cuyo"],
-    xcId: 0
+    regionAR: ["centro","noa","cuyo"]
   },
   {
     id: "b314",
@@ -3739,8 +3520,7 @@ const BIRDS = [
     funFact: "Es un parásito de cría parcial: a veces pone huevos en nidos ajenos pero también cría los suyos. Es difícil de ver por su hábito sigiloso.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["centro","nea","noa"],
-    xcId: 0
+    regionAR: ["centro","nea","noa"]
   },
   {
     id: "b315",
@@ -3751,8 +3531,7 @@ const BIRDS = [
     funFact: "Su pico largo y curvado como una cimitarra es único entre los trepadores. Es casi endémico de Argentina donde habita el espinal y el monte.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["centro","cuyo"],
-    xcId: 0
+    regionAR: ["centro","cuyo"]
   },
   {
     id: "b316",
@@ -3763,8 +3542,7 @@ const BIRDS = [
     funFact: "Es el pariente patagónico del ñandú pero más chico y con plumas moteadas. El macho incuba los huevos de varias hembras y cuida solo a los pichones.",
     difficulty: 1,
     region: "south-america",
-    regionAR: ["patagonia","cuyo"],
-    xcId: 0
+    regionAR: ["patagonia","cuyo"]
   },
   {
     id: "b317",
@@ -3775,8 +3553,7 @@ const BIRDS = [
     funFact: "Vive exclusivamente en ríos de montaña con correntadas violentas. Sus garras extra fuertes le permiten caminar sobre rocas resbalosas bajo el agua.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia","cuyo","noa"],
-    xcId: 0
+    regionAR: ["patagonia","cuyo","noa"]
   },
   {
     id: "b318",
@@ -3787,8 +3564,7 @@ const BIRDS = [
     funFact: "Parece una paloma pero está emparentada con los chorlos. Vive en la estepa patagónica y se camufla tan bien que solo la ves cuando vuela.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["patagonia","cuyo"],
-    xcId: 0
+    regionAR: ["patagonia","cuyo"]
   },
   {
     id: "b319",
@@ -3799,8 +3575,7 @@ const BIRDS = [
     funFact: "Tiene un pico rojo anaranjado fortísimo que usa como palanca para abrir mejillones y ostras en las costas rocosas de la Patagonia.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b320",
@@ -3811,8 +3586,7 @@ const BIRDS = [
     funFact: "El macho es completamente blanco y la hembra marrón barrada, tan distintos que parecen especies diferentes. Vive en las costas rocosas del sur.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b321",
@@ -3823,8 +3597,7 @@ const BIRDS = [
     funFact: "Es exclusivo de los bosques de lenga y ñire patagónicos. El macho tiene un gris azulado único que lo distingue de otros comesebos.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b322",
@@ -3835,8 +3608,7 @@ const BIRDS = [
     funFact: "Tiene la cabeza gris ceniza que le da su nombre. Nidifica en bosques patagónicos pero migra a la pampa en invierno, recorriendo miles de kilómetros.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b323",
@@ -3847,8 +3619,8 @@ const BIRDS = [
     funFact: "Es casi imposible de ver: vive entre la vegetación más densa del sotobosque patagónico. Se lo detecta por su canto repetitivo y penetrante.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    soundUrl: "sounds/birds/b323.mp3",
+    regionAR: ["patagonia"]
   },
   {
     id: "b324",
@@ -3859,8 +3631,7 @@ const BIRDS = [
     funFact: "Forma bandadas grandes en los bosques de lengas. Su canto dulce y acrobático vuelo de cortejo lo hacen uno de los paseriformes más carismáticos de la Patagonia.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b325",
@@ -3871,8 +3642,7 @@ const BIRDS = [
     funFact: "Las plumas de su cola terminan en espinas rígidas que usa como apoyo al trepar troncos, como un mini carpintero. Es el ave más común de los bosques australes.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b326",
@@ -3883,8 +3653,7 @@ const BIRDS = [
     funFact: "A diferencia de otros carpinteros, prefiere buscar insectos en el suelo. Su grito agudo '¡pi-tío!' es inconfundible en los bosques patagónicos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b327",
@@ -3895,8 +3664,8 @@ const BIRDS = [
     funFact: "Su cara negra y pico curvo la distinguen de la bandurria boreal. Anida en acantilados patagónicos y su graznido ronco se oye desde lejos.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    soundUrl: "sounds/birds/b327.mp3",
+    regionAR: ["patagonia"]
   },
   {
     id: "b328",
@@ -3907,8 +3676,7 @@ const BIRDS = [
     funFact: "Su copete curvado hacia adelante le da un aspecto elegante. Prefiere correr a volar y puede alcanzar 50 km/h a pie por la estepa patagónica.",
     difficulty: 1,
     region: "south-america",
-    regionAR: ["patagonia","cuyo","centro"],
-    xcId: 0
+    regionAR: ["patagonia","cuyo","centro"]
   },
   {
     id: "b329",
@@ -3919,8 +3687,7 @@ const BIRDS = [
     funFact: "Es el flamenco más raro del mundo. Solo cría en lagunas salinas de la Puna por encima de 3.500 metros, con patas amarillas que lo distinguen.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["noa","cuyo"],
-    xcId: 0
+    regionAR: ["noa","cuyo"]
   },
   {
     id: "b330",
@@ -3931,8 +3698,7 @@ const BIRDS = [
     funFact: "Se creía extinto hasta que fue redescubierto en 1956 en lagunas de la Puna. Es el flamenco más pequeño de Sudamérica con un pico llamativamente amarillo.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["noa"],
-    xcId: 0
+    regionAR: ["noa"]
   },
   {
     id: "b331",
@@ -3943,8 +3709,7 @@ const BIRDS = [
     funFact: "Habita las estepas altoandinas y patagónicas. Los juveniles son completamente oscuros y van aclarando con los años hasta ser adultos blanquinegros.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b332",
@@ -3955,8 +3720,7 @@ const BIRDS = [
     funFact: "Perdió la capacidad de volar pero desarrolló alas poderosas que usa como remos para 'navegar' a toda velocidad por el agua, levantando espuma como un barco.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   },
   {
     id: "b333",
@@ -3967,8 +3731,7 @@ const BIRDS = [
     funFact: "Tiene una garganta iridiscente violeta y un barbijo blanco que contrasta con su pecho oscuro. Es migratorio y visita el centro de Argentina en verano.",
     difficulty: 3,
     region: "south-america",
-    regionAR: ["centro","noa","nea"],
-    xcId: 0
+    regionAR: ["centro","noa","nea"]
   },
   {
     id: "b334",
@@ -3979,8 +3742,7 @@ const BIRDS = [
     funFact: "Nidifica en colonias enormes en las costas patagónicas. Se zambulle desde gran altura para pescar y puede migrar hasta Brasil en invierno.",
     difficulty: 2,
     region: "south-america",
-    regionAR: ["patagonia"],
-    xcId: 0
+    regionAR: ["patagonia"]
   }
 ];
 
