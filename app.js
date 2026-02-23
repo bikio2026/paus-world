@@ -11,7 +11,7 @@
   const state = {
     screen: 'welcome',
     playerName: '',
-    category: null,       // 'birds' | 'trees'
+    category: null,       // 'birds' | 'birds-ar' | 'trees'
     currentRound: 0,      // 0-9
     rounds: [],           // generated round data
     quizScore: 0,
@@ -122,8 +122,8 @@
 
     birdSoundReady = false;
 
-    // Only show for birds
-    if (state.category !== 'birds') {
+    // Only show for birds (world or Argentine)
+    if (state.category !== 'birds' && state.category !== 'birds-ar') {
       soundBar.style.display = 'none';
       return;
     }
@@ -188,7 +188,10 @@
   // ROUND GENERATION
   // ========================================
   function generateRounds(category) {
-    const pool = category === 'birds' ? BIRDS : TREES;
+    let pool;
+    if (category === 'birds') pool = BIRDS;
+    else if (category === 'birds-ar') pool = BIRDS.filter(b => parseInt(b.id.slice(1)) >= 81);
+    else pool = TREES;
 
     const easy = pool.filter(s => s.difficulty === 1);
     const medium = pool.filter(s => s.difficulty === 2);
@@ -351,21 +354,21 @@
       placeholder.style.display = 'none';
     };
     img.onerror = () => {
-      const icon = state.category === 'birds' ? '🐦' : '🌳';
+      const icon = state.category === 'trees' ? '🌳' : '🐦';
       placeholder.querySelector('.photo-placeholder-icon').textContent = icon;
       placeholder.querySelector('span:last-child').textContent = '¿Podés adivinar sin foto?';
     };
     img.src = photoUrl;
 
     // Bird sound — load but do NOT autoplay
-    if (state.category === 'birds') {
+    if (state.category === 'birds' || state.category === 'birds-ar') {
       loadBirdSound(round.correctSpecies);
     } else {
       $('#bird-sound-bar').style.display = 'none';
     }
 
     // Question
-    const typeLabel = state.category === 'birds' ? 'ave' : 'árbol';
+    const typeLabel = state.category === 'trees' ? 'árbol' : 'ave';
     $('#question-text').textContent = `¿Qué ${typeLabel} es?`;
 
     // Options
@@ -476,8 +479,8 @@
     $('#results-header').textContent = `¡Resultados de ${name}!`;
 
     // Category label
-    const catLabel = state.category === 'birds' ? '🐦 Aves del Mundo' : '🌳 Árboles del Mundo';
-    $('#results-category').textContent = catLabel;
+    const catLabels = { birds: '🐦 Aves del Mundo', 'birds-ar': '🇦🇷 Aves de Argentina', trees: '🌳 Árboles del Mundo' };
+    $('#results-category').textContent = catLabels[state.category] || state.category;
 
     // Quiz score
     $('#results-score').innerHTML = `${state.quizScore} <span>/ 10</span>`;
@@ -555,8 +558,8 @@
     reversed.forEach((entry, idx) => {
       const date = new Date(entry.timestamp);
       const dateStr = date.toLocaleDateString('es-AR', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
-      const catIcon = entry.category === 'birds' ? '🐦' : '🌳';
-      const catName = entry.category === 'birds' ? 'Aves' : 'Árboles';
+      const catIcon = entry.category === 'trees' ? '🌳' : (entry.category === 'birds-ar' ? '🇦🇷' : '🐦');
+      const catName = entry.category === 'trees' ? 'Árboles' : (entry.category === 'birds-ar' ? 'Aves AR' : 'Aves');
 
       // Build detailed rounds table
       let roundsDetail = '';
@@ -856,7 +859,8 @@
     ctx.fillText('✦', w / 2, 195);
 
     // Category
-    const catLabel = state.category === 'birds' ? '🐦  Aves del Mundo' : '🌳  Árboles del Mundo';
+    const shareLabels = { birds: '🐦  Aves del Mundo', 'birds-ar': '🇦🇷  Aves de Argentina', trees: '🌳  Árboles del Mundo' };
+    const catLabel = shareLabels[state.category] || state.category;
     ctx.fillStyle = '#b7e4c7';
     ctx.font = 'italic 36px serif';
     ctx.fillText(catLabel, w / 2, 250);
@@ -934,7 +938,7 @@
       if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
         await navigator.share({
           title: "Pau's World of Wonder",
-          text: `¡${state.playerName || 'Alguien'} hizo ${state.quizScore}/10 en ${state.category === 'birds' ? 'Aves' : 'Árboles'}! 🌿`,
+          text: `¡${state.playerName || 'Alguien'} hizo ${state.quizScore}/10 en ${state.category === 'trees' ? 'Árboles' : (state.category === 'birds-ar' ? 'Aves de Argentina' : 'Aves')}! 🌿`,
           files: [file]
         });
       } else {
