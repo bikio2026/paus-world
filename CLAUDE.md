@@ -71,3 +71,33 @@
 ## Admin
 - URL: `#admin` (password: axelpresidente)
 - Permite reset de scores y cache
+
+---
+
+## Changelog
+
+### v2.0 — Argentina Edition 🇦🇷 (2026-02-23)
+- 254 aves argentinas en 6 regiones biogeográficas (total 334 aves)
+- Mapa SVG de Argentina con regiones resaltadas por especie
+- 123 cantos de aves locales (Xeno-canto, Wikimedia, sonidosdeaves.cl, La Nación)
+- Sonido reproducible después de responder (no se corta al elegir opción)
+- Ícono SVG de ave con camiseta albiceleste para categoría AR
+- Service Worker v10 con cache de fotos + sonidos
+- Lógica de sonido simplificada: solo `soundUrl`, eliminado `xcId`
+
+### v1.1 — Stable (2026-02-22)
+- Música ambient funcional para quiz de árboles
+- 80 aves del mundo + 80 árboles
+- 192 aves de Buenos Aires agregadas (b081-b272)
+- 352 fotos locales (birds + trees)
+- 35 aves con sonidos de Wikimedia Commons
+- Categoría "Aves de Argentina" (sin mapa propio aún)
+- Service Worker v8, .gitignore, limpieza de deploy
+
+### v1.0 — Lanzamiento inicial (2026-02-16)
+- Quiz de aves del mundo (50) y árboles (50)
+- Frases literarias de autores argentinos
+- Mapa planisferio SVG con hábitat
+- Panel admin (#admin)
+- Deploy GitHub Pages
+- Service Worker v6
